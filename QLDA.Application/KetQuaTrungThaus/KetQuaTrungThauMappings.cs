@@ -12,6 +12,7 @@ public static class KetQuaTrungThauMappings {
             GiaTriTrungThau = dto.GiaTriTrungThau,
             DonViTrungThauId = dto.DonViTrungThauId,
             SoNgayTrienKhai = dto.SoNgayTrienKhai,
+            SoNgayThucHienHopDong = dto.SoNgayThucHienHopDong,
             TrichYeu = dto.TrichYeu,
             LoaiGoiThauId = dto.LoaiGoiThauId,
             NgayEHSMT = dto.NgayEHSMT,
@@ -30,6 +31,7 @@ public static class KetQuaTrungThauMappings {
             GiaTriTrungThau = entity.GiaTriTrungThau,
             DonViTrungThauId = entity.DonViTrungThauId,
             SoNgayTrienKhai = entity.SoNgayTrienKhai,
+            SoNgayThucHienHopDong = entity.SoNgayThucHienHopDong,
             TrichYeu = entity.TrichYeu,
             LoaiGoiThauId = entity.LoaiGoiThauId,
             NgayEHSMT = entity.NgayEHSMT,
@@ -44,6 +46,7 @@ public static class KetQuaTrungThauMappings {
         entity.GiaTriTrungThau = dto.GiaTriTrungThau;
         entity.DonViTrungThauId = dto.DonViTrungThauId;
         entity.SoNgayTrienKhai = dto.SoNgayTrienKhai;
+        entity.SoNgayThucHienHopDong = dto.SoNgayThucHienHopDong;
         entity.TrichYeu = dto.TrichYeu;
         entity.LoaiGoiThauId = dto.LoaiGoiThauId;
         entity.NgayEHSMT = dto.NgayEHSMT;

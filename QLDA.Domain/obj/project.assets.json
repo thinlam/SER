@@ -73,11 +73,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+      "projectUniqueName": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
       "projectName": "QLDA.Domain",
-      "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+      "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
       "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-      "outputPath": "e:\\SER\\QLDA.Domain\\obj\\",
+      "outputPath": "E:\\SER\\QLDA.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-              "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+            "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+              "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
             }
           }
         }

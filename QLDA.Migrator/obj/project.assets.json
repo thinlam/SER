@@ -5092,11 +5092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\SER\\QLDA.Migrator\\QLDA.Migrator.csproj",
+      "projectUniqueName": "E:\\SER\\QLDA.Migrator\\QLDA.Migrator.csproj",
       "projectName": "QLDA.Migrator",
-      "projectPath": "e:\\SER\\QLDA.Migrator\\QLDA.Migrator.csproj",
+      "projectPath": "E:\\SER\\QLDA.Migrator\\QLDA.Migrator.csproj",
       "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-      "outputPath": "e:\\SER\\QLDA.Migrator\\obj\\",
+      "outputPath": "E:\\SER\\QLDA.Migrator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5117,23 +5117,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "e:\\BuildingBlocks\\src\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
-              "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
+            "E:\\BuildingBlocks\\src\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
+              "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
             },
-            "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-              "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+            "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+              "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
             },
-            "e:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
-              "projectPath": "e:\\SER\\QLDA.Application\\QLDA.Application.csproj"
+            "E:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
+              "projectPath": "E:\\SER\\QLDA.Application\\QLDA.Application.csproj"
             },
-            "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
-              "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
+            "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+              "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
             },
-            "e:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj": {
-              "projectPath": "e:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj"
+            "E:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj": {
+              "projectPath": "E:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj"
             },
-            "e:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj": {
-              "projectPath": "e:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj"
+            "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj": {
+              "projectPath": "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj"
             }
           }
         }

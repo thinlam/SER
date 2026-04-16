@@ -1,0 +1,11 @@
+﻿{
+  "insertDto": {
+    "duAnId": "fad9b793-80c4-4827-9673-0cddad774bbe",
+    "goiThauId": "aa9393f5-73f9-46ec-8d58-7928b0d04fdc",
+    "giaTriTrungThau": 9000000,
+    "soNgayTrienKhai": 30,
+    "soNgayThucHienHopDong": 45,
+    "trichYeu": "Final Test",
+    "soQuyetDinh": "QD-FINAL"
+  }
+}

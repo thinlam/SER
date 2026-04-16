@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLDA.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06e8a66953f85345c632290e8eab83fb832cd43d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da136bf91334f7936d5c6104c3a86ef1c8170fc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLDA.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLDA.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,6 +16,7 @@ public class KetQuaTrungThauDto : IHasKey<Guid>,
     public long GiaTriTrungThau { get; set; }
     public Guid? DonViTrungThauId { get; set; }
     public long? SoNgayTrienKhai { get; set; }
+    public long? SoNgayThucHienHopDong { get; set; }
     public string? TrichYeu { get; set; }
     public int? LoaiGoiThauId { get; set; }
     public DateTimeOffset? NgayEHSMT { get; set; }

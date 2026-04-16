@@ -2522,6 +2522,9 @@ namespace QLDA.Migrator.Migrations
                     b.Property<DateTimeOffset?>("NgayQuyetDinh")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<long?>("SoNgayThucHienHopDong")
+                        .HasColumnType("bigint");
+
                     b.Property<long?>("SoNgayTrienKhai")
                         .HasColumnType("bigint");
 

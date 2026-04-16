@@ -12,6 +12,7 @@ using System.Data;
 
 namespace QLDA.WebApi.Controllers;
 
+[AllowAnonymous]
 [Tags("Kết quả trúng thầu")]
 [Route("api/ket-qua-trung-thau")]
 public class KetQuaTrungThauController : AggregateRootController {
