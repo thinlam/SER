@@ -1,0 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using QLDA.Domain.Entities.ViMaster;
+
+namespace QLDA.Persistence.Configurations.ViMaster;
+
+public class CanBoDonViConfiguration : AggregateRootConfiguration<CanBoDonVi> {
+    public override void Configure(EntityTypeBuilder<CanBoDonVi> builder) {
+        builder.HasKey(e => e.Id);
+        builder.ToTable("CANBO_DONVI");
+
+        builder.Property(e => e.Id).HasColumnName("CanBoDonViID");
+        builder.Property(e => e.CanBoId).HasColumnName("CanBoID");
+        builder.Property(e => e.ChucVuId).HasColumnName("ChucVuID");
+        builder.Property(e => e.DonViId).HasColumnName("DonViID");
+
+        builder.HasOne(d => d.CanBo).WithMany(p => p.CanBoDonVis)
+            .HasForeignKey(d => d.CanBoId);
+
+        // builder.HasOne(d => d.ChucVu).WithMany(p => p.CanBoDonVis)
+        //     .HasForeignKey(d => d.ChucVuId);
+
+        builder.HasOne(d => d.DonVi).WithMany(p => p.CanBoDonVis)
+            .HasForeignKey(d => d.DonViId);
+    }
+}

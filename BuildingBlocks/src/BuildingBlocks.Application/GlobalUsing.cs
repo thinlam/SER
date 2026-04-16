@@ -1,0 +1,10 @@
+global using MediatR;
+global using System.Data;
+global using FluentValidation;
+global using System.ComponentModel;
+global using BuildingBlocks.Domain.Entities;
+global using BuildingBlocks.Domain.Interfaces;
+global using BuildingBlocks.Application.Common.DTOs;
+global using BuildingBlocks.Domain.Entities.Abstractions;
+global using BuildingBlocks.CrossCutting.Exceptions;
+global using BuildingBlocks.CrossCutting.ExtensionMethods;

@@ -1,0 +1,21 @@
+global using MediatR;
+global using System.ComponentModel;
+global using FluentValidation;
+global using QLDA.Domain.Entities.ViMaster;
+global using QLDA.Domain.Entities;
+global using QLDA.Domain.Entities.DanhMuc;
+global using QLDA.Application.TamUngs.DTOs;
+global using QLDA.Application.Common.DTOs;
+
+global using BuildingBlocks.Domain.DTOs;
+global using BuildingBlocks.Domain.Constants;
+global using BuildingBlocks.Domain.Providers;
+global using BuildingBlocks.Domain.Interfaces;
+global using BuildingBlocks.Domain.Entities.Abstractions;
+global using BuildingBlocks.CrossCutting.Exceptions;
+global using BuildingBlocks.CrossCutting.ExtensionMethods;
+global using BuildingBlocks.Application.Common.DTOs;
+global using BuildingBlocks.Application.Common.Services;
+
+
+global using Microsoft.Extensions.DependencyInjection;

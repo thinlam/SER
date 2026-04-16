@@ -1,0 +1,6 @@
+@QLDA.Service_HostAddress = http://localhost:5082
+
+GET {{QLDA.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

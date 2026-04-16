@@ -1,0 +1,45 @@
+using QLDA.Application.QuyetDinhLapHoiDongThamDinhs.DTOs;
+
+namespace QLDA.Application.QuyetDinhLapHoiDongThamDinhs;
+
+public static class QuyetDinhLapHoiDongThamDinhMappings {
+    public static QuyetDinhLapHoiDongThamDinh ToEntity(this QuyetDinhLapHoiDongThamDinhInsertDto dto) {
+        return new QuyetDinhLapHoiDongThamDinh {
+            Id = Guid.NewGuid(),
+            DuAnId = dto.DuAnId,
+            BuocId = dto.BuocId,
+            So = dto.SoQuyetDinh,
+            Ngay = dto.NgayQuyetDinh,
+            TrichYeu = dto.TrichYeu,
+            NoiDung = dto.NoiDung,
+            NgayKy = dto.NgayKy,
+            NguoiKy = dto.NguoiKy
+        };
+    }
+
+    public static QuyetDinhLapHoiDongThamDinh ToEntity(this QuyetDinhLapHoiDongThamDinhUpdateDto dto) {
+        return new QuyetDinhLapHoiDongThamDinh {
+            Id = dto.Id,
+            So = dto.SoQuyetDinh,
+            Ngay = dto.NgayQuyetDinh,
+            TrichYeu = dto.TrichYeu,
+            NoiDung = dto.NoiDung,
+            NgayKy = dto.NgayKy,
+            NguoiKy = dto.NguoiKy
+        };
+    }
+
+    public static QuyetDinhLapHoiDongThamDinhDto ToDto(this QuyetDinhLapHoiDongThamDinh entity) {
+        return new QuyetDinhLapHoiDongThamDinhDto {
+            Id = entity.Id,
+            DuAnId = entity.DuAnId,
+            BuocId = entity.BuocId,
+            SoQuyetDinh = entity.So,
+            NgayQuyetDinh = entity.Ngay,
+            TrichYeu = entity.TrichYeu,
+            NoiDung = entity.NoiDung,
+            NgayKy = entity.NgayKy,
+            NguoiKy = entity.NguoiKy
+        };
+    }
+}

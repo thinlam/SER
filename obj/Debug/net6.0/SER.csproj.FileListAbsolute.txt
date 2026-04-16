@@ -1,0 +1,8 @@
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.csproj.AssemblyReference.cache
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.GeneratedMSBuildEditorConfig.editorconfig
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.AssemblyInfoInputs.cache
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.AssemblyInfo.cs
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.csproj.CoreCompileInputs.cache
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.MvcApplicationPartsAssemblyInfo.cs
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\SER.MvcApplicationPartsAssemblyInfo.cache
+D:\Viet_info\TTCDS\pml\DesktopModules\MVC\QuanLyDuAn\SER\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs

@@ -1,0 +1,746 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\duans\\queries\\duangetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\duans\\queries\\duangetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\controllers\\duancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\controllers\\duancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\qlda.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\qlda.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\qlda.service.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\qlda.service.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\watch_dev.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\watch_dev.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\deploy.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\deploy.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\qlda.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\qlda.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\qlda.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\qlda.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\deployscript_usage_vn.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\deployscript_usage_vn.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\deployscript.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\deployscript.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48EC7BF2-D5A2-4945-865D-3F002C2B2C3A}|QLDA.Persistence\\QLDA.Persistence.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.persistence\\qlda.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48EC7BF2-D5A2-4945-865D-3F002C2B2C3A}|QLDA.Persistence\\QLDA.Persistence.csproj|solutionrelative:qlda.persistence\\qlda.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8AF643-91D7-4A26-B8CC-7689FBBCFD8A}|QLDA.Infrastructure\\QLDA.Infrastructure.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.infrastructure\\qlda.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0F8AF643-91D7-4A26-B8CC-7689FBBCFD8A}|QLDA.Infrastructure\\QLDA.Infrastructure.csproj|solutionrelative:qlda.infrastructure\\qlda.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\goithaus\\commands\\goithaudeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\goithaus\\commands\\goithaudeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\goithaus\\dtos\\goithauinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\goithaus\\dtos\\goithauinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\goithaus\\dtos\\goithaudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\goithaus\\dtos\\goithaudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\common\\behaviors\\performancebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\common\\behaviors\\performancebehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\common\\behaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\common\\behaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\common\\attributes\\ignoreclaimattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\common\\attributes\\ignoreclaimattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\duans\\queries\\duangetdanhsachtrehanquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\duans\\queries\\duangetdanhsachtrehanquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\duans\\queries\\duangetquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\duans\\queries\\duangetquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.domain\\entities\\baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|solutionrelative:qlda.domain\\entities\\baocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.domain\\entities\\duanbuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|solutionrelative:qlda.domain\\entities\\duanbuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.domain\\entities\\duan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|solutionrelative:qlda.domain\\entities\\duan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\duans\\dtos\\duandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\duans\\dtos\\duandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.domain\\entities\\goithau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49522CC7-2577-4E09-AFEB-B6EA0963E151}|QLDA.Domain\\QLDA.Domain.csproj|solutionrelative:qlda.domain\\entities\\goithau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\goithaus\\queries\\goithaugetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\goithaus\\queries\\goithaugetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\nghiemthus\\queries\\nghiemthugetquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\nghiemthus\\queries\\nghiemthugetquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\nghiemthus\\queries\\nghiemthugetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\nghiemthus\\queries\\nghiemthugetdanhsachquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\nghiemthus\\dtos\\nghiemthudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\nghiemthus\\dtos\\nghiemthudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\common\\interfaces\\imusthaveid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\common\\interfaces\\imusthaveid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\nghiemthus\\commands\\nghiemthudeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\nghiemthus\\commands\\nghiemthudeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.application\\hopdongs\\commands\\hopdongdeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FE1E666-897D-44D6-AFB4-6522EFECB7A1}|QLDA.Application\\QLDA.Application.csproj|solutionrelative:qlda.application\\hopdongs\\commands\\hopdongdeletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|d:\\viet_info\\ttcds\\pml\\desktopmodules\\mvc\\quanlyduan\\ser\\qlda.webapi\\controllers\\danhmucquytrinhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFA81361-9219-4C27-B836-C129363DE894}|QLDA.WebApi\\QLDA.WebApi.csproj|solutionrelative:qlda.webapi\\controllers\\danhmucquytrinhcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\web.config",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\web.config",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\web.config",
+              "RelativeToolTip": "QLDA.WebApi\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-11T08:23:22.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DuAnGetDanhSachQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:02:53.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\Program.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Program.cs",
+              "RelativeToolTip": "QLDA.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T08:23:18.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "watch_dev.bat",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\watch_dev.bat",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\watch_dev.bat",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\watch_dev.bat",
+              "RelativeToolTip": "QLDA.WebApi\\watch_dev.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2026-03-11T08:26:24.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DuAnController.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Controllers\\DuAnController.cs",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\Controllers\\DuAnController.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Controllers\\DuAnController.cs",
+              "RelativeToolTip": "QLDA.WebApi\\Controllers\\DuAnController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwFUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T06:42:14.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QLDA.Service.http",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.Service.http",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\QLDA.Service.http",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.Service.http",
+              "RelativeToolTip": "QLDA.WebApi\\QLDA.Service.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-11T08:26:26.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QLDA.WebApi",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\QLDA.WebApi.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+              "RelativeToolTip": "QLDA.WebApi\\QLDA.WebApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-11T08:26:42.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Deploy.bat",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Deploy.bat",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\Deploy.bat",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Deploy.bat",
+              "RelativeToolTip": "QLDA.WebApi\\Deploy.bat",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2025-12-09T03:42:40.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QLDA.WebApi.csproj",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\QLDA.WebApi.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+              "RelativeToolTip": "QLDA.WebApi\\QLDA.WebApi.csproj",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-25T03:56:23.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\DependencyInjection.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DependencyInjection.cs",
+              "RelativeToolTip": "QLDA.WebApi\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T08:23:38.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "QLDA.CrossCuttingConcerns.csproj",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj",
+              "RelativeDocumentMoniker": "QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj",
+              "RelativeToolTip": "QLDA.CrossCuttingConcerns\\QLDA.CrossCuttingConcerns.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-11T08:23:14.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EnumsExtensions.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs",
+              "RelativeDocumentMoniker": "QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs",
+              "RelativeToolTip": "QLDA.CrossCuttingConcerns\\ExtensionMethods\\EnumsExtensions.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:50.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IDbConnectionFactory.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs",
+              "RelativeToolTip": "QLDA.CrossCuttingConcerns\\Factories\\IDbConnectionFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:46.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeployScript_Usage_VN.md",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DeployScript_Usage_VN.md",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\DeployScript_Usage_VN.md",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DeployScript_Usage_VN.md",
+              "RelativeToolTip": "QLDA.WebApi\\DeployScript_Usage_VN.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-12-09T03:42:41.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeployScript.ps1",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DeployScript.ps1",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\DeployScript.ps1",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\DeployScript.ps1",
+              "RelativeToolTip": "QLDA.WebApi\\DeployScript.ps1",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-09T03:42:41.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QLDA.Persistence.csproj",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+              "RelativeDocumentMoniker": "QLDA.Persistence\\QLDA.Persistence.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+              "RelativeToolTip": "QLDA.Persistence\\QLDA.Persistence.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-09T03:42:32.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GoiThauDeleteCommand.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\Commands\\GoiThauDeleteCommand.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\GoiThaus\\Commands\\GoiThauDeleteCommand.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\Commands\\GoiThauDeleteCommand.cs",
+              "RelativeToolTip": "QLDA.Application\\GoiThaus\\Commands\\GoiThauDeleteCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:13.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AsposeResult.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs",
+              "RelativeDocumentMoniker": "QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs",
+              "RelativeToolTip": "QLDA.CrossCuttingConcerns\\Offices\\AsposeResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:47.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QLDA.Application.csproj",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\QLDA.Application.csproj",
+              "RelativeDocumentMoniker": "QLDA.Application\\QLDA.Application.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\QLDA.Application.csproj",
+              "RelativeToolTip": "QLDA.Application\\QLDA.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T02:40:20.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ComboData.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs",
+              "RelativeDocumentMoniker": "QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs",
+              "RelativeToolTip": "QLDA.CrossCuttingConcerns\\Offices\\ComboData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:48.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GoiThauInsertDto.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\DTOs\\GoiThauInsertDto.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\GoiThaus\\DTOs\\GoiThauInsertDto.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\DTOs\\GoiThauInsertDto.cs",
+              "RelativeToolTip": "QLDA.Application\\GoiThaus\\DTOs\\GoiThauInsertDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:12.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GoiThauDto.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\DTOs\\GoiThauDto.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\GoiThaus\\DTOs\\GoiThauDto.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\DTOs\\GoiThauDto.cs",
+              "RelativeToolTip": "QLDA.Application\\GoiThaus\\DTOs\\GoiThauDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:42:10.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PerformanceBehaviour.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Behaviors\\PerformanceBehaviour.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\Common\\Behaviors\\PerformanceBehaviour.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Behaviors\\PerformanceBehaviour.cs",
+              "RelativeToolTip": "QLDA.Application\\Common\\Behaviors\\PerformanceBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:41:59.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoggingBehavior.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Behaviors\\LoggingBehavior.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\Common\\Behaviors\\LoggingBehavior.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Behaviors\\LoggingBehavior.cs",
+              "RelativeToolTip": "QLDA.Application\\Common\\Behaviors\\LoggingBehavior.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:41:58.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IgnoreClaimAttribute.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Attributes\\IgnoreClaimAttribute.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\Common\\Attributes\\IgnoreClaimAttribute.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Attributes\\IgnoreClaimAttribute.cs",
+              "RelativeToolTip": "QLDA.Application\\Common\\Attributes\\IgnoreClaimAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T03:41:57.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QLDA.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "QLDA.Infrastructure\\QLDA.Infrastructure.csproj",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj",
+              "RelativeToolTip": "QLDA.Infrastructure\\QLDA.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-25T03:56:33.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DuAnGetDanhSachTreHanQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachTreHanQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachTreHanQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachTreHanQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\DuAns\\Queries\\DuAnGetDanhSachTreHanQuery.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowBcAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T02:40:33.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DuAnGetQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\DuAns\\Queries\\DuAnGetQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\Queries\\DuAnGetQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\DuAns\\Queries\\DuAnGetQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T02:40:28.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaoCao.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\BaoCao.cs",
+              "RelativeDocumentMoniker": "QLDA.Domain\\Entities\\BaoCao.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\BaoCao.cs",
+              "RelativeToolTip": "QLDA.Domain\\Entities\\BaoCao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T02:40:04.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DuAnBuoc.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\DuAnBuoc.cs",
+              "RelativeDocumentMoniker": "QLDA.Domain\\Entities\\DuAnBuoc.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\DuAnBuoc.cs",
+              "RelativeToolTip": "QLDA.Domain\\Entities\\DuAnBuoc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T02:39:58.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DuAnDto.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\DTOs\\DuAnDto.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\DuAns\\DTOs\\DuAnDto.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\DuAns\\DTOs\\DuAnDto.cs",
+              "RelativeToolTip": "QLDA.Application\\DuAns\\DTOs\\DuAnDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T07:02:48.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DuAn.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\DuAn.cs",
+              "RelativeDocumentMoniker": "QLDA.Domain\\Entities\\DuAn.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\DuAn.cs",
+              "RelativeToolTip": "QLDA.Domain\\Entities\\DuAn.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAswLQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:48:15.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NghiemThuGetQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetQuery.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:44:45.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NghiemThuGetDanhSachQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetDanhSachQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetDanhSachQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetDanhSachQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\NghiemThus\\Queries\\NghiemThuGetDanhSachQuery.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAADwvzMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:44:22.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IMustHaveId.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Interfaces\\IMustHaveId.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\Common\\Interfaces\\IMustHaveId.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\Common\\Interfaces\\IMustHaveId.cs",
+              "RelativeToolTip": "QLDA.Application\\Common\\Interfaces\\IMustHaveId.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:44:18.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NghiemThuDto.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\DTOs\\NghiemThuDto.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\NghiemThus\\DTOs\\NghiemThuDto.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\DTOs\\NghiemThuDto.cs",
+              "RelativeToolTip": "QLDA.Application\\NghiemThus\\DTOs\\NghiemThuDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:43:31.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "NghiemThuDeleteCommand.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Commands\\NghiemThuDeleteCommand.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\NghiemThus\\Commands\\NghiemThuDeleteCommand.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\NghiemThus\\Commands\\NghiemThuDeleteCommand.cs",
+              "RelativeToolTip": "QLDA.Application\\NghiemThus\\Commands\\NghiemThuDeleteCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:43:27.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GoiThauGetDanhSachQuery.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\Queries\\GoiThauGetDanhSachQuery.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\GoiThaus\\Queries\\GoiThauGetDanhSachQuery.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\GoiThaus\\Queries\\GoiThauGetDanhSachQuery.cs",
+              "RelativeToolTip": "QLDA.Application\\GoiThaus\\Queries\\GoiThauGetDanhSachQuery.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAABRwB0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:43:02.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GoiThau.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\GoiThau.cs",
+              "RelativeDocumentMoniker": "QLDA.Domain\\Entities\\GoiThau.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Domain\\Entities\\GoiThau.cs",
+              "RelativeToolTip": "QLDA.Domain\\Entities\\GoiThau.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:42:43.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HopDongDeleteCommand.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\HopDongs\\Commands\\HopDongDeleteCommand.cs",
+              "RelativeDocumentMoniker": "QLDA.Application\\HopDongs\\Commands\\HopDongDeleteCommand.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.Application\\HopDongs\\Commands\\HopDongDeleteCommand.cs",
+              "RelativeToolTip": "QLDA.Application\\HopDongs\\Commands\\HopDongDeleteCommand.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAABRwA0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T02:43:26.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DanhMucQuyTrinhController.cs",
+              "DocumentMoniker": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Controllers\\DanhMucQuyTrinhController.cs",
+              "RelativeDocumentMoniker": "QLDA.WebApi\\Controllers\\DanhMucQuyTrinhController.cs",
+              "ToolTip": "D:\\Viet_info\\TTCDS\\pml\\DesktopModules\\MVC\\QuanLyDuAn\\SER\\QLDA.WebApi\\Controllers\\DanhMucQuyTrinhController.cs",
+              "RelativeToolTip": "QLDA.WebApi\\Controllers\\DanhMucQuyTrinhController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T10:07:29.315Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1524,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

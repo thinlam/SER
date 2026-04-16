@@ -1,0 +1,1 @@
+cd QLDA.WebApi && Deploy.bat %* && cd ..

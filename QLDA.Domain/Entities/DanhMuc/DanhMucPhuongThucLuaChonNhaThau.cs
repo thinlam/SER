@@ -1,0 +1,13 @@
+namespace QLDA.Domain.Entities.DanhMuc;
+/// <summary>
+/// Danh mục trạng thái dự án
+/// </summary>
+public class DanhMucPhuongThucLuaChonNhaThau : DanhMuc<int>, IAggregateRoot, IMayHaveStt {
+    public int? Stt { get; set; }
+
+    #region Navigation Properties
+
+    public ICollection<GoiThau>? GoiThaus { get; set; } = [];
+
+    #endregion
+}

@@ -1,0 +1,1 @@
+dotnet watch run --urls=https://0.0.0.0:7130;http://0.0.0.0:5082 -c Debug --environment Development

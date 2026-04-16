@@ -1,0 +1,1 @@
+cd QLDA.WebApi && dotnet watch run && cd ..
