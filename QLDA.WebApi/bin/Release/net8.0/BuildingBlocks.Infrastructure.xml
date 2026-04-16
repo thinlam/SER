@@ -43,6 +43,12 @@
             No property reflection required, maps dictionary keys to template columns directly.
             </summary>
         </member>
+        <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.ConvertToDictionaryList``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Convert list of objects to list of dictionaries for dynamic export.
+            Uses JsonPropertyNameAttribute for property name mapping if present.
+            </summary>
+        </member>
         <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.ExportHierarchical``3(BuildingBlocks.CrossCutting.Offices.TwoLevelHierarchicalInstruction{``0,``1,``2})">
             <summary>
             Export hierarchical data voi 2 cap group
@@ -62,6 +68,30 @@
             <summary>
             Export multi-level hierarchical data with vertical cell merging.
             Supports N levels where Level 1 rows define merge boundaries.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.ExportMultiSheet``2(BuildingBlocks.CrossCutting.Offices.MultiSheetInstruction{``0,``1})">
+            <summary>
+            Export two sheets from a single template workbook.
+            Sheet 1: T1 data, Sheet 2: T2 data.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.ExportDynamicMultiSheet(BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction)">
+            <summary>
+            Export N sheets with custom names from a single template worksheet.
+            Template worksheet is copied for each sheet, renamed, and filled with dictionary-based data.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.FillWorksheetDynamic(Aspose.Cells.Worksheet,System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.Object}},System.Collections.Generic.List{System.String})">
+            <summary>
+            Fill worksheet with dictionary-based data.
+            Reusable logic for dynamic multi-sheet exports.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Infrastructure.Offices.ExporterHelper.FillWorksheet``1(Aspose.Cells.Worksheet,System.Collections.Generic.List{``0},System.Collections.Generic.List{System.String})">
+            <summary>
+            Fill worksheet with data using template binding pattern.
+            Reusable logic for single-sheet and multi-sheet exports.
             </summary>
         </member>
         <member name="M:BuildingBlocks.Infrastructure.Offices.WorksheetExtensions.ClearPlaceholderMarkers(Aspose.Cells.Worksheet)">

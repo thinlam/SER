@@ -4,6 +4,101 @@
         <name>BuildingBlocks.Application</name>
     </assembly>
     <members>
+        <member name="M:BuildingBlocks.Application.Attachments.Commands.AttachmentBulkInsertOrUpdateCommandHandler.InsertOrUpdateAsync(BuildingBlocks.Application.Attachments.Commands.AttachmentBulkInsertOrUpdateCommand,System.Threading.CancellationToken)">
+            <summary>
+            Xoá mềm
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Application.Attachments.Commands.AttachmentBulkInsertOrUpdateCommandHandler.InsertOrUpdateCascadeAsync(BuildingBlocks.Application.Attachments.Commands.AttachmentBulkInsertOrUpdateCommand,System.Threading.CancellationToken)">
+            <summary>
+            Xoá cứng
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentDto.Type">
+            <summary>
+            Loại tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentDto.FileName">
+            <summary>
+            Tên tệp mới
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentDto.OriginalName">
+            <summary>
+            Tên tệp gốc
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentDto.Path">
+            <summary>
+            Đường dẫn lưu tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentDto.Size">
+            <summary>
+            Kích thước
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel.Type">
+            <summary>
+            Loại tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel.FileName">
+            <summary>
+            Tên tệp mới
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel.OriginalName">
+            <summary>
+            Tên tệp gốc
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel.Path">
+            <summary>
+            Đường dẫn lưu tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel.Size">
+            <summary>
+            Kích thước
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel.Type">
+            <summary>
+            Loại tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel.FileName">
+            <summary>
+            Tên tệp mới
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel.OriginalName">
+            <summary>
+            Tên tệp gốc
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel.Path">
+            <summary>
+            Đường dẫn lưu tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel.Size">
+            <summary>
+            Kích thước
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Application.Attachments.DTOs.AttachmentMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertModel},System.String,System.String)">
+            <summary>
+            Chuyển đổi danh sách AttachmentInsertModel thành entities
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Application.Attachments.DTOs.AttachmentMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.Attachments.DTOs.AttachmentInsertOrUpdateModel},System.String,System.String)">
+            <summary>
+            Chuyển đổi danh sách AttachmentInsertOrUpdateModel thành entities
+            </summary>
+        </member>
         <member name="T:BuildingBlocks.Application.Common.Attributes.AuthorizeAllRolesAttribute">
             <summary>
             Base authorization attribute that requires "Registered Users" role.
@@ -97,6 +192,11 @@
             Mô tả
             </summary>
         </member>
+        <member name="P:BuildingBlocks.Application.Common.DTOs.DanhMucDto`1.Stt">
+            <summary>
+            Số thứ tự hiển thị trên giao diện
+            </summary>
+        </member>
         <member name="P:BuildingBlocks.Application.Common.DTOs.DanhMucInsertModel.Ma">
             <summary>
             Mã
@@ -137,11 +237,6 @@
             DTO cho combobox với dữ liệu enum
             </summary>
         </member>
-        <member name="P:BuildingBlocks.Application.Common.DTOs.MinimalEnumDto.Ma">
-            <summary>
-            Mã
-            </summary>
-        </member>
         <member name="P:BuildingBlocks.Application.Common.DTOs.PaginatedList`1.Statistic">
             <summary>
             Thống kê tổng hợp
@@ -160,6 +255,24 @@
         <member name="P:BuildingBlocks.Application.Common.DTOs.PaginatedList`1.TotalPages">
             <summary>
             Tổng số trang
+            </summary>
+        </member>
+        <member name="T:BuildingBlocks.Application.Common.Interfaces.IMayHaveAttachmentDto">
+            <summary>
+            DTO có danh sách tệp đính kèm
+            </summary>
+        </member>
+        <member name="T:BuildingBlocks.Application.Common.Interfaces.IMayHaveAttachmentInsertModel">
+            <summary>
+            Chỉ thêm file
+            </summary>
+        </member>
+        <member name="T:BuildingBlocks.Application.Common.Interfaces.IMayHaveAttachmentInsertOrUpdateModel">
+            <summary>
+            Thêm sửa xoá file <br/>
+            - Thêm: id giá trị null hoặc default
+            - Sửa: có id
+            - Xoá: không gửi lại id từ danh sách đã trả về
             </summary>
         </member>
         <member name="T:BuildingBlocks.Application.Common.Interfaces.IMayHaveTepDinhKemDto">
@@ -245,6 +358,11 @@
             <summary>
             Sets IsDeleted = true on the entity and all its loaded navigation properties that implement IMayHaveDelete,
             collects groupIds from their Id.ToString(), and deletes related TepDinhKem.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.Application.Common.SyncHelper.SetDeleteWithRelatedFiles(BuildingBlocks.Domain.Interfaces.IRepository{BuildingBlocks.Domain.Entities.Attachment,System.Guid},System.Collections.Generic.List{System.String},System.Boolean,System.Threading.CancellationToken)">
+            <summary>
+            Sets IsDeleted = true on Attachment entities by groupIds.
             </summary>
         </member>
         <member name="M:BuildingBlocks.Application.DependencyInjection.AddBuildingBlocksConverters(System.Text.Json.JsonSerializerOptions)">
@@ -566,25 +684,25 @@
             Kích thước
             </summary>
         </member>
-        <member name="M:BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemInsertModel},System.String,BuildingBlocks.Domain.Enums.EGroupType)">
+        <member name="M:BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemInsertModel},System.String,System.String)">
             <summary>
             Nếu groupId là một chuỗi số (number) thì bắt buộc phải truyền groupType.
             </summary>
             <param name="data">Danh sách các model đầu vào.</param>
             <param name="groupId">ID của nhóm, có thể là số hoặc chuỗi.</param>
-            <param name="groupType">Loại nhóm, bắt buộc nếu groupId là số.</param>
+            <param name="groupType">Loại nhóm (tên bảng), bắt buộc nếu groupId là số.</param>
             <returns>Một IEnumerable chứa các entity TepDinhKem.</returns>
-            <exception cref="T:System.ArgumentException">Ném ra khi groupId là số nhưng groupType không được cung cấp (là EGroupType.None).</exception>
+            <exception cref="T:System.ArgumentException">Ném ra khi groupId là số nhưng groupType không được cung cấp (null hoặc empty).</exception>
         </member>
-        <member name="M:BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemInsertOrUpdateModel},System.String,BuildingBlocks.Domain.Enums.EGroupType)">
+        <member name="M:BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemMapping.ToEntities(System.Collections.Generic.List{BuildingBlocks.Application.TepDinhKems.DTOs.TepDinhKemInsertOrUpdateModel},System.String,System.String)">
             <summary>
             Nếu groupId là một chuỗi số (number) thì bắt buộc phải truyền groupType.
             </summary>
             <param name="data">Danh sách các model đầu vào.</param>
             <param name="groupId">ID của nhóm, có thể là số hoặc chuỗi.</param>
-            <param name="groupType">Loại nhóm, bắt buộc nếu groupId là số.</param>
+            <param name="groupType">Loại nhóm (tên bảng), bắt buộc nếu groupId là số.</param>
             <returns>Một IEnumerable chứa các entity TepDinhKem.</returns>
-            <exception cref="T:System.ArgumentException">Ném ra khi groupId là số nhưng groupType không được cung cấp (là EGroupType.None).</exception>
+            <exception cref="T:System.ArgumentException">Ném ra khi groupId là số nhưng groupType không được cung cấp (null hoặc empty).</exception>
         </member>
     </members>
 </doc>

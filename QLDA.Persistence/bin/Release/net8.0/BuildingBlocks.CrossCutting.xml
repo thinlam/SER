@@ -122,6 +122,53 @@
             Reads column mappings from Excel template ($FieldName markers).
             </summary>
         </member>
+        <member name="T:BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction">
+            <summary>
+            Instruction for exporting N sheets with custom names from a single template.
+            Each sheet is created by copying the template worksheet and filling with dictionary-based data.
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction.TemplatePath">
+            <summary>
+            Path to the Excel template file.
+            Template must have at least one worksheet with $FieldName markers.
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction.Sheets">
+            <summary>
+            List of sheet instructions - each defines title and data for one sheet.
+            Sheets are created in order, named according to Title property.
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction.PlaceholderReplacements">
+            <summary>
+            Placeholder replacements to apply across all sheets.
+            Key: placeholder (e.g., "&lt;Nam&gt;"), Value: replacement text.
+            </summary>
+        </member>
+        <member name="T:BuildingBlocks.CrossCutting.Offices.SheetInstruction">
+            <summary>
+            Configuration for a single sheet in dynamic multi-sheet export.
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.SheetInstruction.Title">
+            <summary>
+            Title/name for the worksheet tab.
+            Example: "Báo cáo tổng - 2025"
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.SheetInstruction.Items">
+            <summary>
+            Data rows as dictionaries.
+            Keys map to template column markers ($FieldName).
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.SheetInstruction.HiddenColumns">
+            <summary>
+            Columns to hide/remove from this sheet.
+            Column names match template markers (without $ prefix).
+            </summary>
+        </member>
         <member name="T:BuildingBlocks.CrossCutting.Offices.HierarchicalExportInstruction`2">
             <summary>
             Configuration for hierarchical Excel export with grouped headers
@@ -218,6 +265,21 @@
             Uses dictionary-based data for flexibility.
             </summary>
         </member>
+        <member name="M:BuildingBlocks.CrossCutting.Offices.IExporterHelper.ExportMultiSheet``2(BuildingBlocks.CrossCutting.Offices.MultiSheetInstruction{``0,``1})">
+            <summary>
+            Export two sheets from a single template workbook.
+            Sheet 1: T1 data, Sheet 2: T2 data.
+            Template must have two worksheets with $FieldName markers.
+            </summary>
+        </member>
+        <member name="M:BuildingBlocks.CrossCutting.Offices.IExporterHelper.ExportDynamicMultiSheet(BuildingBlocks.CrossCutting.Offices.DynamicMultiSheetInstruction)">
+            <summary>
+            Export N sheets with custom names from a single template worksheet.
+            Template worksheet is copied for each sheet, renamed, and filled with dictionary-based data.
+            Supports dynamic number of sheets (e.g., year-based reports: "Báo cáo tổng - 2025", "Báo cáo tổng - 2026").
+            </summary>
+            <param name="instruction">Instruction with template path and list of sheet configurations</param>
+        </member>
         <member name="M:BuildingBlocks.CrossCutting.Offices.IImporterHelper.GetTemplate(System.String,System.Collections.Generic.List{System.Collections.Generic.List{BuildingBlocks.CrossCutting.Offices.ComboData}})">
             <summary>
             Export template động dựa trên placeholders $FieldName
@@ -249,6 +311,13 @@
             Default: "Level"
             </summary>
         </member>
+        <member name="P:BuildingBlocks.CrossCutting.Offices.MultiLevelHierarchicalInstruction.RootLevel">
+            <summary>
+            The level that defines root groups for merging.
+            Default: 1 (Level 1 rows are root groups)
+            Set to 0 if you have a super-root level that spans multiple Level 1 groups.
+            </summary>
+        </member>
         <member name="P:BuildingBlocks.CrossCutting.Offices.MultiLevelHierarchicalInstruction.SttPropertyName">
             <summary>
             Property name for STT (row number within root group).
@@ -263,6 +332,13 @@
         <member name="P:BuildingBlocks.CrossCutting.Offices.MultiLevelHierarchicalInstruction.TemplateRowIndex">
             <summary>
             Template row index (0-based) where $ markers are located.
+            </summary>
+        </member>
+        <member name="T:BuildingBlocks.CrossCutting.Offices.MultiSheetInstruction`2">
+            <summary>
+            Instruction for exporting two sheets from a single template workbook.
+            Sheet 1 contains T1 data, Sheet 2 contains T2 data.
+            Template must have two worksheets with $FieldName markers.
             </summary>
         </member>
         <member name="T:BuildingBlocks.CrossCutting.Offices.TreeOutlineInstruction`1">

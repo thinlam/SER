@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {}
+    "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {}
   },
   "projects": {
     "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
@@ -75,14 +75,14 @@
         }
       }
     },
-    "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+    "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectUniqueName": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "projectName": "QLDA.Domain",
-        "projectPath": "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\QLDA_SER\\SER\\QLDA.Domain\\obj\\",
+        "outputPath": "E:\\SER\\QLDA.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

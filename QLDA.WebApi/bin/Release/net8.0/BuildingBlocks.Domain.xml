@@ -75,27 +75,27 @@
             Kiểu dữ liệu chuỗi
             </summary>
         </member>
-        <member name="T:BuildingBlocks.Domain.Constants.DefaultValueConstants">
+        <member name="T:BuildingBlocks.Domain.Constants.DefaultConstants">
             <summary>
             Constants cho các giá trị mặc định của hệ thống BuildingBlocks
             </summary>
         </member>
-        <member name="F:BuildingBlocks.Domain.Constants.DefaultValueConstants.DEFAULT_NEW_ENTITY_ID">
+        <member name="F:BuildingBlocks.Domain.Constants.DefaultConstants.DEFAULT_NEW_ENTITY_ID">
             <summary>
             ID mặc định cho entity mới tạo
             </summary>
         </member>
-        <member name="F:BuildingBlocks.Domain.Constants.DefaultValueConstants.DEFAULT_IS_DELETED">
+        <member name="F:BuildingBlocks.Domain.Constants.DefaultConstants.DEFAULT_IS_DELETED">
             <summary>
             Giá trị mặc định cho soft delete
             </summary>
         </member>
-        <member name="F:BuildingBlocks.Domain.Constants.DefaultValueConstants.DEFAULT_USED">
+        <member name="F:BuildingBlocks.Domain.Constants.DefaultConstants.DEFAULT_USED">
             <summary>
             Giá trị mặc định cho Used property
             </summary>
         </member>
-        <member name="F:BuildingBlocks.Domain.Constants.DefaultValueConstants.DEFAULT_ROOT_LEVEL">
+        <member name="F:BuildingBlocks.Domain.Constants.DefaultConstants.DEFAULT_ROOT_LEVEL">
             <summary>
             Level mặc định cho root node trong materialized path
             </summary>
@@ -201,6 +201,11 @@
             Trang đầu tiên
             </summary>
         </member>
+        <member name="F:BuildingBlocks.Domain.Constants.PagingConstants.MAX_PAGE_SIZE">
+            <summary>
+            Kích thước phân trang tối đa là 100 record
+            </summary>
+        </member>
         <member name="T:BuildingBlocks.Domain.Constants.RequestProcessingConstants">
             <summary>
             Constants cho xử lý request và đơn vị tổ chức
@@ -299,10 +304,60 @@
             Mã
             </summary>
         </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Abstractions.MaterializedPathDanhMuc`1.Ma">
+            <summary>
+            Mã
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Abstractions.MaterializedPathDanhMuc`1.Ten">
+            <summary>
+            Tên
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Abstractions.MaterializedPathDanhMuc`1.MoTa">
+            <summary>
+            Mô tả
+            </summary>
+        </member>
         <member name="T:BuildingBlocks.Domain.Entities.Abstractions.MaterializedPathEntity`1">
             <summary>
             </summary>
             <typeparam name="TKey"></typeparam>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.GroupId">
+            <summary>
+            Id của bảng có tệp đính kèm
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.GroupType">
+            <summary>
+            Là bảng nào
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.Type">
+            <summary>
+            Loại tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.FileName">
+            <summary>
+            Tên tệp mới
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.OriginalName">
+            <summary>
+            Tên tệp gốc
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.Path">
+            <summary>
+            Đường dẫn lưu tệp
+            </summary>
+        </member>
+        <member name="P:BuildingBlocks.Domain.Entities.Attachment.Size">
+            <summary>
+            Kích thước
+            </summary>
         </member>
         <member name="T:BuildingBlocks.Domain.Entities.AuditLog">
             <summary>
@@ -356,7 +411,7 @@
         </member>
         <member name="P:BuildingBlocks.Domain.Entities.TepDinhKem.GroupType">
             <summary>
-            Là bảng nào
+            Là bảng nào (tên bảng)
             </summary>
         </member>
         <member name="P:BuildingBlocks.Domain.Entities.TepDinhKem.Type">
@@ -615,6 +670,7 @@
             <param name="allNodes"></param>
             <param name="getId"></param>
             <param name="getParentId"></param>
+            <param name="setPath"></param>
             <param name="setLevel"></param>
             <param name="setParentId"></param>
         </member>
@@ -660,7 +716,7 @@
             </summary>
             <param name="OnlyUsed">True: chỉ lấy còn sử dụng, False: lấy luôn cả không còn sử dụng</param>
             <param name="OnlyNotDeleted"></param>
-            <param name="OrderByDescIndex"></param>
+            <param name="OrderByIndex"></param>
             <returns></returns>
         </member>
         <member name="M:BuildingBlocks.Domain.Interfaces.IRepository`2.GetQueryableSet">

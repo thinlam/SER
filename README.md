@@ -87,8 +87,13 @@ POST /api/auth/logout   # Revoke session
    ```bash
    dotnet run --project QLDA.WebApi
    ```
+   The API will listen on:
+   - HTTP: `http://localhost:5082`
+   - HTTPS: `https://localhost:5092`
 
-5. **Access Swagger:** `http://localhost:{port}/swagger`
+5. **Access Swagger:** 
+   - Open your browser and navigate to: `http://localhost:5082/swagger`
+   - Or use HTTPS: `https://localhost:5092/swagger`
 
 ## Architecture
 

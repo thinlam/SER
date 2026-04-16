@@ -426,7 +426,7 @@
             <param name="duAnId"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.UpdateState(QLDA.Application.DuAnBuocs.DTOs.DuAnBuocDuAnUpdateStateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.UpdateState(QLDA.Application.DuAnBuocs.DTOs.DuAnBuocDuAnUpdateStateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật bước
             </summary>
@@ -435,7 +435,7 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.GetDanhSachTienDo(QLDA.Application.Common.DTOs.PaginationRecord,System.String,System.Nullable{System.Int32},System.Nullable{System.Guid})">
+        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.GetDanhSachTienDo(BuildingBlocks.Domain.DTOs.AggregateRootPagination,System.String,System.Nullable{System.Int32},System.Nullable{System.Guid})">
             <summary>
             Danh sách
             </summary>
@@ -450,7 +450,7 @@
             </remarks>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.GetAll(QLDA.Application.Common.DTOs.PaginationRecord,System.String,System.Nullable{System.Int32},System.Nullable{System.Guid})">
+        <member name="M:QLDA.WebApi.Controllers.DuAnBuocController.GetAll(BuildingBlocks.Domain.DTOs.AggregateRootPagination,System.String,System.Nullable{System.Int32},System.Nullable{System.Guid})">
             <summary>
             quy trình - bước - danh sách
             </summary>
@@ -499,7 +499,7 @@
             <response code="500">Lỗi hệ thống</response>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.DuAnController.Create(QLDA.Application.DuAns.DTOs.DuAnInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.DuAnController.Create(QLDA.Application.DuAns.DTOs.DuAnInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Thêm mới dự án
             </summary>
@@ -511,7 +511,7 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.DuAnController.Update(QLDA.Application.DuAns.DTOs.DuAnUpdateModel,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.DuAnController.Update(QLDA.Application.DuAns.DTOs.DuAnUpdateModel,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật dự án
             </summary>
@@ -530,7 +530,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.GoiThauController.Create(QLDA.Application.GoiThaus.DTOs.GoiThauInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.GoiThauController.Create(QLDA.Application.GoiThaus.DTOs.GoiThauInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Thêm mới gói thầu
             </summary>
@@ -542,7 +542,7 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.GoiThauController.Update(QLDA.Application.GoiThaus.DTOs.GoiThauUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.GoiThauController.Update(QLDA.Application.GoiThaus.DTOs.GoiThauUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật gói thầu
             </summary>
@@ -594,7 +594,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.HopDongController.Create(QLDA.Application.HopDongs.DTOs.HopDongInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.HopDongController.Create(QLDA.Application.HopDongs.DTOs.HopDongInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
              <summary>
             
              </summary>
@@ -606,7 +606,7 @@
              <param name="cancellationToken"></param>
              <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.HopDongController.Update(QLDA.Application.HopDongs.DTOs.HopDongUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.HopDongController.Update(QLDA.Application.HopDongs.DTOs.HopDongUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
              <summary>
             
              </summary>
@@ -636,7 +636,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.KeHoachLuaChonNhaThauController.Create(QLDA.Application.KeHoachLuaChonNhaThaus.DTOs.KeHoachLuaChonNhaThauInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.KeHoachLuaChonNhaThauController.Create(QLDA.Application.KeHoachLuaChonNhaThaus.DTOs.KeHoachLuaChonNhaThauInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -645,7 +645,7 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.KeHoachLuaChonNhaThauController.Update(QLDA.Application.KeHoachLuaChonNhaThaus.DTOs.KeHoachLuaChonNhaThauUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.KeHoachLuaChonNhaThauController.Update(QLDA.Application.KeHoachLuaChonNhaThaus.DTOs.KeHoachLuaChonNhaThauUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
@@ -672,7 +672,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.KetQuaTrungThauController.Insert(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.KetQuaTrungThauController.Insert(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Thêm mới kết quả trúng thầu
             </summary>
@@ -684,7 +684,7 @@
             <param name="cancellationToken"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.KetQuaTrungThauController.Update(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.KetQuaTrungThauController.Update(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật kết quả trúng thầu
             </summary>
@@ -783,7 +783,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.NghiemThuController.Create(QLDA.Application.NghiemThus.DTOs.NghiemThuInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.NghiemThuController.Create(QLDA.Application.NghiemThus.DTOs.NghiemThuInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
              <summary>
             
              </summary>
@@ -795,7 +795,7 @@
              <param name="cancellationToken"></param>
              <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.NghiemThuController.Update(QLDA.Application.NghiemThus.DTOs.NghiemThuUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.NghiemThuController.Update(QLDA.Application.NghiemThus.DTOs.NghiemThuUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật
             </summary>
@@ -1191,7 +1191,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.TamUngController.Create(QLDA.Application.TamUngs.DTOs.TamUngInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.TamUngController.Create(QLDA.Application.TamUngs.DTOs.TamUngInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
              <summary>
             
              </summary>
@@ -1203,7 +1203,7 @@
              <param name="cancellationToken"></param>
              <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.TamUngController.Update(QLDA.Application.TamUngs.DTOs.TamUngUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.TamUngController.Update(QLDA.Application.TamUngs.DTOs.TamUngUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật
             </summary>
@@ -1231,7 +1231,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.ThanhToanController.Create(QLDA.Application.ThanhToans.DTOs.ThanhToanInsertDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.ThanhToanController.Create(QLDA.Application.ThanhToans.DTOs.ThanhToanInsertDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
              <summary>
             
              </summary>
@@ -1243,7 +1243,7 @@
              <param name="cancellationToken"></param>
              <returns></returns>
         </member>
-        <member name="M:QLDA.WebApi.Controllers.ThanhToanController.Update(QLDA.Application.ThanhToans.DTOs.ThanhToanUpdateDto,QLDA.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
+        <member name="M:QLDA.WebApi.Controllers.ThanhToanController.Update(QLDA.Application.ThanhToans.DTOs.ThanhToanUpdateDto,BuildingBlocks.Domain.Interfaces.IUnitOfWork,System.Threading.CancellationToken)">
             <summary>
             Cập nhật
             </summary>
@@ -1361,23 +1361,6 @@
             <summary>
             Tên dự án
             </summary>
-        </member>
-        <member name="P:QLDA.WebApi.Models.Common.PaginationModel.PageIndex">
-            <summary>
-            Vị trí hiện tại của trang - bắt đầu từ 0 <br/>1
-            Nếu PageIndex > 0 => lấy PageIndex <br/>
-            Nếu PageIndex == 0 => lấy toàn bộ
-            </summary>
-            <example>1</example>
-        </member>
-        <member name="P:QLDA.WebApi.Models.Common.PaginationModel.PageSize">
-            <summary>
-            Số bản ghi muốn lấy <br/>
-            Nếu PageSize > 0 => lấy PageSize <br/>
-            Nếu PageSize == 0 => lấy toàn bộ <br/>
-            Kích thước tối đa là 100 record cùng lúc
-            </summary>
-            <example>100</example>
         </member>
         <member name="P:QLDA.WebApi.Models.DangTaiKeHoachLcntLenMangs.DangTaiKeHoachLcntLenMangModel.TrangThaiId">
             <summary>

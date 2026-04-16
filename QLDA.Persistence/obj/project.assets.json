@@ -3718,18 +3718,18 @@
     },
     "BuildingBlocks.CrossCutting/1.0.0": {
       "type": "project",
-      "path": "../../../BuildingBlocks/src/BuildingBlocks.CrossCutting/BuildingBlocks.CrossCutting.csproj",
-      "msbuildProject": "../../../BuildingBlocks/src/BuildingBlocks.CrossCutting/BuildingBlocks.CrossCutting.csproj"
+      "path": "../../BuildingBlocks/src/BuildingBlocks.CrossCutting/BuildingBlocks.CrossCutting.csproj",
+      "msbuildProject": "../../BuildingBlocks/src/BuildingBlocks.CrossCutting/BuildingBlocks.CrossCutting.csproj"
     },
     "BuildingBlocks.Domain/1.0.0": {
       "type": "project",
-      "path": "../../../BuildingBlocks/src/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj",
-      "msbuildProject": "../../../BuildingBlocks/src/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj"
+      "path": "../../BuildingBlocks/src/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj",
+      "msbuildProject": "../../BuildingBlocks/src/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj"
     },
     "BuildingBlocks.Persistence/1.0.0": {
       "type": "project",
-      "path": "../../../BuildingBlocks/src/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
-      "msbuildProject": "../../../BuildingBlocks/src/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
+      "path": "../../BuildingBlocks/src/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj",
+      "msbuildProject": "../../BuildingBlocks/src/BuildingBlocks.Persistence/BuildingBlocks.Persistence.csproj"
     },
     "QLDA.Domain/1.0.0": {
       "type": "project",
@@ -3757,11 +3757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\QLDA_SER\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+      "projectUniqueName": "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
       "projectName": "QLDA.Persistence",
-      "projectPath": "E:\\QLDA_SER\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+      "projectPath": "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
       "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-      "outputPath": "E:\\QLDA_SER\\SER\\QLDA.Persistence\\obj\\",
+      "outputPath": "E:\\SER\\QLDA.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3788,8 +3788,8 @@
             "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
               "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
             },
-            "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
-              "projectPath": "E:\\QLDA_SER\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
+            "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+              "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
             }
           }
         }

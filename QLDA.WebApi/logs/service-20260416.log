@@ -287,3 +287,125 @@ System.Security.Authentication.AuthenticationException: Authentication failed, s
 [2026-04-16 11:01:51.819 +07:00  INF]  Hosting environment: Development
 [2026-04-16 11:01:51.819 +07:00  INF]  Content root path: E:\QLDA_SER\SER\QLDA.WebApi
 [2026-04-16 11:01:51.821 +07:00  DBG]  Hosting started
+[2026-04-16 11:35:29.700 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-16 11:35:29.806 +07:00  DBG]  Hosting starting
+[2026-04-16 11:35:29.819 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-16 11:35:29.826 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-16 11:35:29.846 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-16 11:35:29.855 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-16 11:35:29.858 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:35:29.860 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-16 11:35:29.863 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:35:29.868 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-16 11:35:29.871 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-16 11:35:29.874 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-16 11:35:29.875 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-16 11:35:29.954 +07:00  WRN]  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-04-16 11:35:29.974 +07:00  INF]  Now listening on: http://localhost:5082
+[2026-04-16 11:35:29.976 +07:00  INF]  Now listening on: https://localhost:5092
+[2026-04-16 11:35:29.977 +07:00  DBG]  Loaded hosting startup assembly QLDA.WebApi
+[2026-04-16 11:35:29.977 +07:00  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-16 11:35:29.979 +07:00  INF]  Hosting environment: Development
+[2026-04-16 11:35:29.979 +07:00  INF]  Content root path: E:\SER\QLDA.WebApi
+[2026-04-16 11:35:29.980 +07:00  DBG]  Hosting started
+[2026-04-16 11:35:34.101 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" accepted.
+[2026-04-16 11:35:34.102 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" started.
+[2026-04-16 11:35:34.103 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" accepted.
+[2026-04-16 11:35:34.104 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" started.
+[2026-04-16 11:35:34.131 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/ - null null
+[2026-04-16 11:35:34.135 +07:00  DBG]  Wildcard detected, all requests with hosts will be allowed.
+[2026-04-16 11:35:34.159 +07:00  DBG]  No candidates found for the request path '/'
+[2026-04-16 11:35:34.160 +07:00  DBG]  Request did not match any endpoints
+[2026-04-16 11:35:34.188 +07:00  INF]  No cached response available for this request.
+[2026-04-16 11:35:34.206 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-16 11:35:34.211 +07:00  INF]  HTTP GET / responded 404 in 18.5911 ms
+[2026-04-16 11:35:34.214 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-16 11:35:34.215 +07:00  INF]  The response could not be cached for this request.
+[2026-04-16 11:35:34.219 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" completed keep alive response.
+[2026-04-16 11:35:34.222 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/ - 404 0 null 91.5574ms
+[2026-04-16 11:35:34.226 +07:00  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5082/, Response status code: 404
+[2026-04-16 11:35:41.200 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/swagger - null null
+[2026-04-16 11:35:41.203 +07:00  DBG]  No candidates found for the request path '/swagger'
+[2026-04-16 11:35:41.204 +07:00  DBG]  Request did not match any endpoints
+[2026-04-16 11:35:41.207 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" completed keep alive response.
+[2026-04-16 11:35:41.209 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/swagger - 301 0 null 8.6577ms
+[2026-04-16 11:35:41.355 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+[2026-04-16 11:35:41.359 +07:00  DBG]  No candidates found for the request path '/swagger/v1/swagger.json'
+[2026-04-16 11:35:41.361 +07:00  DBG]  Request did not match any endpoints
+[2026-04-16 11:35:42.433 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" completed keep alive response.
+[2026-04-16 11:35:42.435 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1079.9085ms
+[2026-04-16 11:36:34.290 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" received FIN.
+[2026-04-16 11:36:34.295 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-16 11:36:34.298 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" disconnecting.
+[2026-04-16 11:36:34.302 +07:00  DBG]  Connection id "0HNKRE6CMUP8O" stopped.
+[2026-04-16 11:37:04.075 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:37:04.334 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:37:04.600 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:37:23.199 +07:00  INF]  Application is shutting down...
+[2026-04-16 11:37:23.200 +07:00  DBG]  Hosting stopping
+[2026-04-16 11:37:23.210 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" disconnecting.
+[2026-04-16 11:37:23.218 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" stopped.
+[2026-04-16 11:37:23.220 +07:00  DBG]  Connection id "0HNKRE6CMUP8N" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-16 11:37:23.230 +07:00  DBG]  Hosting stopped
+[2026-04-16 11:37:28.306 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-16 11:37:28.411 +07:00  DBG]  Hosting starting
+[2026-04-16 11:37:28.419 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-16 11:37:28.425 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-16 11:37:28.430 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-16 11:37:28.436 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-16 11:37:28.439 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:37:28.441 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-16 11:37:28.442 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:37:28.445 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-16 11:37:28.447 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-16 11:37:28.448 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-16 11:37:28.449 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-16 11:37:28.496 +07:00  WRN]  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-04-16 11:37:28.513 +07:00  INF]  Now listening on: http://localhost:5082
+[2026-04-16 11:37:28.515 +07:00  INF]  Now listening on: https://localhost:5092
+[2026-04-16 11:37:28.516 +07:00  DBG]  Loaded hosting startup assembly QLDA.WebApi
+[2026-04-16 11:37:28.517 +07:00  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-16 11:37:28.518 +07:00  INF]  Hosting environment: Development
+[2026-04-16 11:37:28.520 +07:00  INF]  Content root path: E:\SER\QLDA.WebApi
+[2026-04-16 11:37:28.521 +07:00  DBG]  Hosting started
+[2026-04-16 11:39:25.307 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:39:27.582 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:39:27.845 +07:00  DBG]  Config reload token fired. Checking for changes...
+[2026-04-16 11:43:49.197 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-16 11:43:49.315 +07:00  DBG]  Hosting starting
+[2026-04-16 11:43:49.325 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-16 11:43:49.332 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-16 11:43:49.338 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-16 11:43:49.346 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-16 11:43:49.349 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:43:49.354 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-16 11:43:49.356 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-16 11:43:49.360 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-16 11:43:49.363 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-16 11:43:49.365 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-16 11:43:49.367 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-16 11:43:49.420 +07:00  WRN]  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-04-16 11:43:49.441 +07:00  INF]  Now listening on: http://localhost:5082
+[2026-04-16 11:43:49.444 +07:00  INF]  Now listening on: https://localhost:5092
+[2026-04-16 11:43:49.445 +07:00  DBG]  Loaded hosting startup assembly QLDA.WebApi
+[2026-04-16 11:43:49.446 +07:00  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-16 11:43:49.447 +07:00  INF]  Hosting environment: Development
+[2026-04-16 11:43:49.448 +07:00  INF]  Content root path: E:\SER\QLDA.WebApi
+[2026-04-16 11:43:49.449 +07:00  DBG]  Hosting started
+[2026-04-16 11:44:12.619 +07:00  DBG]  Connection id "0HNKREB77TNUJ" accepted.
+[2026-04-16 11:44:12.620 +07:00  DBG]  Connection id "0HNKREB77TNUJ" started.
+[2026-04-16 11:44:12.620 +07:00  DBG]  Connection id "0HNKREB77TNUK" accepted.
+[2026-04-16 11:44:12.622 +07:00  DBG]  Connection id "0HNKREB77TNUK" started.
+[2026-04-16 11:44:12.779 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - null null
+[2026-04-16 11:44:12.784 +07:00  DBG]  Wildcard detected, all requests with hosts will be allowed.
+[2026-04-16 11:44:12.805 +07:00  DBG]  No candidates found for the request path '/swagger/v1/swagger.json'
+[2026-04-16 11:44:12.806 +07:00  DBG]  Request did not match any endpoints
+[2026-04-16 11:44:13.197 +07:00  DBG]  Connection id "0HNKREB77TNUJ" completed keep alive response.
+[2026-04-16 11:44:13.201 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 422.2092ms
+[2026-04-16 11:45:12.664 +07:00  DBG]  Connection id "0HNKREB77TNUK" received FIN.
+[2026-04-16 11:45:12.666 +07:00  DBG]  Connection id "0HNKREB77TNUK" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-16 11:45:12.668 +07:00  DBG]  Connection id "0HNKREB77TNUK" disconnecting.
+[2026-04-16 11:45:12.670 +07:00  DBG]  Connection id "0HNKREB77TNUK" stopped.
+[2026-04-16 11:46:23.786 +07:00  DBG]  Connection id "0HNKREB77TNUJ" disconnecting.
+[2026-04-16 11:46:23.792 +07:00  DBG]  Connection id "0HNKREB77TNUJ" stopped.
+[2026-04-16 11:46:23.794 +07:00  DBG]  Connection id "0HNKREB77TNUJ" sending FIN because: "The Socket transport's send loop completed gracefully."

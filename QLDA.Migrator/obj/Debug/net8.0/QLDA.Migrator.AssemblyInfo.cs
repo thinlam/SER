@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLDA.Migrator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+534c331d94bca4550f5cabac6052184e530e6cf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d47a98a7757399aa6257abdcaa906e096998c9fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLDA.Migrator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLDA.Migrator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

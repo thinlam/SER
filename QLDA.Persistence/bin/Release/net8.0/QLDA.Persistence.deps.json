@@ -459,11 +459,11 @@
           }
         }
       },
-      "SequentialGuid/4.0.6": {
+      "SequentialGuid/5.0.7": {
         "runtime": {
           "lib/net8.0/SequentialGuid.dll": {
-            "assemblyVersion": "4.0.6.0",
-            "fileVersion": "4.0.6.0"
+            "assemblyVersion": "5.0.7.0",
+            "fileVersion": "5.0.7.0"
           }
         }
       },
@@ -761,7 +761,7 @@
       "BuildingBlocks.CrossCutting/1.0.0": {
         "dependencies": {
           "Aspose.Cells": "20.11.0",
-          "SequentialGuid": "4.0.6"
+          "SequentialGuid": "5.0.7"
         },
         "runtime": {
           "BuildingBlocks.CrossCutting.dll": {
@@ -772,7 +772,7 @@
       },
       "BuildingBlocks.Domain/1.0.0": {
         "dependencies": {
-          "SequentialGuid": "4.0.6"
+          "SequentialGuid": "5.0.7"
         },
         "runtime": {
           "BuildingBlocks.Domain.dll": {
@@ -799,7 +799,8 @@
       },
       "QLDA.Domain/1.0.0": {
         "dependencies": {
-          "BuildingBlocks.Domain": "1.0.0"
+          "BuildingBlocks.Domain": "1.0.0",
+          "SequentialGuid": "5.0.7"
         },
         "runtime": {
           "QLDA.Domain.dll": {
@@ -1061,12 +1062,12 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
-    "SequentialGuid/4.0.6": {
+    "SequentialGuid/5.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8n9ZXiNNlkfQZiWf4mDKBxJ9W/aNSeuhpjR8gaE8bkEWse+Eub1GZx5KBAp3MzWPOU0gVdZXPAQ8PuvVF5mLEw==",
-      "path": "sequentialguid/4.0.6",
-      "hashPath": "sequentialguid.4.0.6.nupkg.sha512"
+      "sha512": "sha512-o/K6X8rVEt3L6CsY7yH94kQ1Rt8QGMxpAtN7Buf51ag0vf5Nfo2hLvCdaj3j+0Vx7bH52IDlirO+na3VgeOdgA==",
+      "path": "sequentialguid/5.0.7",
+      "hashPath": "sequentialguid.5.0.7.nupkg.sha512"
     },
     "Serilog/4.2.0": {
       "type": "package",

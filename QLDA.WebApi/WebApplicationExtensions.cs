@@ -57,7 +57,10 @@ public static class WebApiServiceExtensions {
             options.SwaggerDoc("v1", new OpenApiInfo {
                 Version = "v1",
                 Title = "QLDA API",
-                Description = "API quản lý dự án"
+                Description = "API quản lý dự án",
+                Contact = new OpenApiContact {
+                    Name = "QLDA Team"
+                }
             });
             options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme {
                 In = ParameterLocation.Header,
