@@ -4170,11 +4170,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+      "projectUniqueName": "e:\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
       "projectName": "QLDA.WebApi",
-      "projectPath": "E:\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
+      "projectPath": "e:\\SER\\QLDA.WebApi\\QLDA.WebApi.csproj",
       "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-      "outputPath": "E:\\SER\\QLDA.WebApi\\obj\\",
+      "outputPath": "e:\\SER\\QLDA.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4195,14 +4195,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
-              "projectPath": "E:\\SER\\QLDA.Application\\QLDA.Application.csproj"
+            "e:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
+              "projectPath": "e:\\SER\\QLDA.Application\\QLDA.Application.csproj"
             },
-            "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
-              "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
+            "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+              "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
             },
-            "E:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj": {
-              "projectPath": "E:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj"
+            "e:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj": {
+              "projectPath": "e:\\SER\\QLDA.Infrastructure\\QLDA.Infrastructure.csproj"
             }
           }
         }

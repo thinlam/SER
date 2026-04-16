@@ -3757,11 +3757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+      "projectUniqueName": "e:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
       "projectName": "QLDA.Persistence",
-      "projectPath": "E:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
+      "projectPath": "e:\\SER\\QLDA.Persistence\\QLDA.Persistence.csproj",
       "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-      "outputPath": "E:\\SER\\QLDA.Persistence\\obj\\",
+      "outputPath": "e:\\SER\\QLDA.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3782,14 +3782,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-              "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+            "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+              "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
             },
-            "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-              "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+            "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+              "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
             },
-            "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
-              "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
+            "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+              "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
             }
           }
         }

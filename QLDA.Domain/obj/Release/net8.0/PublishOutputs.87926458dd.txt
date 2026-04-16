@@ -1,0 +1,7 @@
+e:\SER\PublishOutput\QLDA.Domain.dll
+e:\SER\PublishOutput\QLDA.Domain.deps.json
+e:\SER\PublishOutput\QLDA.Domain.pdb
+e:\SER\PublishOutput\SequentialGuid.dll
+e:\SER\PublishOutput\BuildingBlocks.Domain.dll
+e:\SER\PublishOutput\BuildingBlocks.Domain.pdb
+e:\SER\PublishOutput\BuildingBlocks.Domain.xml

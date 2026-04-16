@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLDA.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d47a98a7757399aa6257abdcaa906e096998c9fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06e8a66953f85345c632290e8eab83fb832cd43d")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLDA.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLDA.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

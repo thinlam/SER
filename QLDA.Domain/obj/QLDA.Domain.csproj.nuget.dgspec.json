@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {}
+    "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {}
   },
   "projects": {
-    "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+    "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "projectUniqueName": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
         "projectName": "BuildingBlocks.Domain",
-        "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\obj\\",
+        "outputPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+    "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectUniqueName": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "projectName": "QLDA.Domain",
-        "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\SER\\QLDA.Domain\\obj\\",
+        "outputPath": "e:\\SER\\QLDA.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +103,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               }
             }
           }

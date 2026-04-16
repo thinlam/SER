@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SER\\QLDA.Application\\QLDA.Application.csproj": {}
+    "e:\\SER\\QLDA.Application\\QLDA.Application.csproj": {}
   },
   "projects": {
-    "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
+    "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
+        "projectUniqueName": "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
         "projectName": "BuildingBlocks.Application",
-        "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
+        "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\obj\\",
+        "outputPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj"
               },
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               },
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj"
               }
             }
           }
@@ -124,14 +124,14 @@
         }
       }
     },
-    "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
+    "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj",
+        "projectUniqueName": "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj",
         "projectName": "BuildingBlocks.CrossCutting",
-        "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj",
+        "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\obj\\",
+        "outputPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -199,14 +199,14 @@
         }
       }
     },
-    "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+    "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "projectUniqueName": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
         "projectName": "BuildingBlocks.Domain",
-        "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\obj\\",
+        "outputPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -270,14 +270,14 @@
         }
       }
     },
-    "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
+    "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
+        "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\BuildingBlocks.Persistence.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\obj\\",
+        "outputPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -298,11 +298,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.CrossCutting\\BuildingBlocks.CrossCutting.csproj"
               },
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               }
             }
           }
@@ -364,14 +364,14 @@
         }
       }
     },
-    "E:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
+    "e:\\SER\\QLDA.Application\\QLDA.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SER\\QLDA.Application\\QLDA.Application.csproj",
+        "projectUniqueName": "e:\\SER\\QLDA.Application\\QLDA.Application.csproj",
         "projectName": "QLDA.Application",
-        "projectPath": "E:\\SER\\QLDA.Application\\QLDA.Application.csproj",
+        "projectPath": "e:\\SER\\QLDA.Application\\QLDA.Application.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\SER\\QLDA.Application\\obj\\",
+        "outputPath": "e:\\SER\\QLDA.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -392,14 +392,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj"
               },
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               },
-              "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
-                "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
+              "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+                "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj"
               }
             }
           }
@@ -485,14 +485,14 @@
         }
       }
     },
-    "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
+    "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectUniqueName": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "projectName": "QLDA.Domain",
-        "projectPath": "E:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
+        "projectPath": "e:\\SER\\QLDA.Domain\\QLDA.Domain.csproj",
         "packagesPath": "C:\\Users\\thinl\\.nuget\\packages\\",
-        "outputPath": "E:\\SER\\QLDA.Domain\\obj\\",
+        "outputPath": "e:\\SER\\QLDA.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -513,8 +513,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "E:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "e:\\BuildingBlocks\\src\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               }
             }
           }
