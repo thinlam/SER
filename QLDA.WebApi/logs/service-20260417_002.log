@@ -1,0 +1,738 @@
+[2026-04-17 02:36:17.076 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-17 02:36:17.709 +07:00  DBG]  Hosting starting
+[2026-04-17 02:36:17.722 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-17 02:36:17.745 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-17 02:36:17.813 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-17 02:36:17.884 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-17 02:36:17.896 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:36:17.911 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-17 02:36:17.915 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:36:18.099 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-17 02:36:18.178 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-17 02:36:18.183 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-17 02:36:18.185 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-17 02:36:18.290 +07:00  ERR]  Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5082: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-04-17 08:39:24.204 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-17 08:39:24.317 +07:00  DBG]  Hosting starting
+[2026-04-17 08:39:24.330 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-17 08:39:24.339 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-17 08:39:24.359 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-17 08:39:24.367 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-17 08:39:24.371 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 08:39:24.374 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-17 08:39:24.376 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 08:39:24.383 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-17 08:39:24.387 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-17 08:39:24.393 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-17 08:39:24.396 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-17 08:39:24.471 +07:00  WRN]  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-04-17 08:39:24.489 +07:00  INF]  Now listening on: http://localhost:5082
+[2026-04-17 08:39:24.494 +07:00  INF]  Now listening on: https://localhost:5092
+[2026-04-17 08:39:24.496 +07:00  DBG]  Loaded hosting startup assembly QLDA.WebApi
+[2026-04-17 08:39:24.497 +07:00  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-17 08:39:24.499 +07:00  INF]  Hosting environment: Development
+[2026-04-17 08:39:24.501 +07:00  INF]  Content root path: E:\SER\QLDA.WebApi
+[2026-04-17 08:39:24.504 +07:00  DBG]  Hosting started
+[2026-04-17 08:39:36.203 +07:00  DBG]  Connection id "0HNKS48NDJG3T" received FIN.
+[2026-04-17 08:39:36.213 +07:00  DBG]  Connection id "0HNKS48NDJG3T" accepted.
+[2026-04-17 08:39:36.216 +07:00  DBG]  Connection id "0HNKS48NDJG3T" started.
+[2026-04-17 08:39:36.220 +07:00  DBG]  Connection id "0HNKS48NDJG3U" accepted.
+[2026-04-17 08:39:36.222 +07:00  DBG]  Connection id "0HNKS48NDJG3U" started.
+[2026-04-17 08:39:36.228 +07:00  DBG]  Connection id "0HNKS48NDJG3T" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:39:36.234 +07:00  DBG]  Connection id "0HNKS48NDJG3T" disconnecting.
+[2026-04-17 08:39:36.238 +07:00  DBG]  Connection id "0HNKS48NDJG3T" stopped.
+[2026-04-17 08:39:36.264 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/danh-sach-tien-do - null null
+[2026-04-17 08:39:36.270 +07:00  DBG]  Wildcard detected, all requests with hosts will be allowed.
+[2026-04-17 08:39:36.308 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/danh-sach-tien-do'
+[2026-04-17 08:39:36.312 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/danh-sach-tien-do' is valid for the request path '/api/ket-qua-trung-thau/danh-sach-tien-do'
+[2026-04-17 08:39:36.315 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:36.355 +07:00  DBG]  The request cannot be served from cache because it contains a 'no-cache' cache directive.
+[2026-04-17 08:39:36.377 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:39:36.380 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:36.404 +07:00  INF]  Route matched with {action = "Get", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Get(System.Nullable`1[System.Guid], System.Nullable`1[System.Int32], System.Nullable`1[System.Guid], System.String, Int32, Int32) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:39:36.408 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:39:36.409 +07:00  DBG]  Execution plan of resource filters (in the following order): ["None"]
+[2026-04-17 08:39:36.412 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:39:36.416 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:39:36.418 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:39:36.422 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:39:36.426 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:39:36.434 +07:00  DBG]  Attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:39:36.438 +07:00  DBG]  Attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' using the name '' in request data ...
+[2026-04-17 08:39:36.441 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.445 +07:00  DBG]  Done attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.446 +07:00  DBG]  Done attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.447 +07:00  DBG]  Attempting to validate the bound parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:39:36.450 +07:00  DBG]  Done attempting to validate the bound parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.453 +07:00  DBG]  Attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]' ...
+[2026-04-17 08:39:36.455 +07:00  DBG]  Attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]' using the name '' in request data ...
+[2026-04-17 08:39:36.458 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:39:36.460 +07:00  DBG]  Done attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:39:36.462 +07:00  DBG]  Done attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:39:36.467 +07:00  DBG]  Attempting to validate the bound parameter 'buocId' of type 'System.Nullable`1[System.Int32]' ...
+[2026-04-17 08:39:36.471 +07:00  DBG]  Done attempting to validate the bound parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:39:36.473 +07:00  DBG]  Attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:39:36.475 +07:00  DBG]  Attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' using the name '' in request data ...
+[2026-04-17 08:39:36.477 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.480 +07:00  DBG]  Done attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.482 +07:00  DBG]  Done attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.484 +07:00  DBG]  Attempting to validate the bound parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:39:36.485 +07:00  DBG]  Done attempting to validate the bound parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:39:36.487 +07:00  DBG]  Attempting to bind parameter 'globalFilter' of type 'System.String' ...
+[2026-04-17 08:39:36.490 +07:00  DBG]  Attempting to bind parameter 'globalFilter' of type 'System.String' using the name '' in request data ...
+[2026-04-17 08:39:36.491 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:39:36.494 +07:00  DBG]  Done attempting to bind parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:39:36.495 +07:00  DBG]  Done attempting to bind parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:39:36.497 +07:00  DBG]  Attempting to validate the bound parameter 'globalFilter' of type 'System.String' ...
+[2026-04-17 08:39:36.499 +07:00  DBG]  Done attempting to validate the bound parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:39:36.500 +07:00  DBG]  Attempting to bind parameter 'pageIndex' of type 'System.Int32' ...
+[2026-04-17 08:39:36.501 +07:00  DBG]  Attempting to bind parameter 'pageIndex' of type 'System.Int32' using the name '' in request data ...
+[2026-04-17 08:39:36.503 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:39:36.505 +07:00  DBG]  Done attempting to bind parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:39:36.507 +07:00  DBG]  Done attempting to bind parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:39:36.508 +07:00  DBG]  Attempting to validate the bound parameter 'pageIndex' of type 'System.Int32' ...
+[2026-04-17 08:39:36.512 +07:00  DBG]  Done attempting to validate the bound parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:39:36.515 +07:00  DBG]  Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+[2026-04-17 08:39:36.516 +07:00  DBG]  Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+[2026-04-17 08:39:36.518 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:39:36.519 +07:00  DBG]  Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:39:36.522 +07:00  DBG]  Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:39:36.526 +07:00  DBG]  Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+[2026-04-17 08:39:36.528 +07:00  DBG]  Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:39:36.577 +07:00  INF]  Messenger Request: KetQuaTrungThauGetDanhSachQuery {"DuAnId":null,"BuocId":null,"GoiThauId":null,"GlobalFilter":null,"IsNoTracking":true,"PageIndex":0,"PageSize":0}
+[2026-04-17 08:39:36.649 +07:00  DBG]  An 'IServiceProvider' was created for internal use by Entity Framework.
+[2026-04-17 08:39:36.819 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.825 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.833 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.903 +07:00  DBG]  No relationship from 'DuToan' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn'} that could be matched with the properties on the other entity type - {'DuToanHienTai', 'DuToans'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.979 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.983 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:36.986 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.037 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.041 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.042 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.074 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.077 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.078 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.096 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.101 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.106 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.122 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.125 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.128 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.151 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.154 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.157 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.163 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.166 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.168 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.175 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.177 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.179 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.207 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.210 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.214 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.262 +07:00  DBG]  No relationship from 'DuAn' to 'DuAnBuoc' has been configured by convention because there are multiple properties on one entity type - {'BuocHienTai', 'DuAnBuocs'} that could be matched with the properties on the other entity type - {'DuAn', 'DuAnHienTai'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.264 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.269 +07:00  DBG]  No relationship from 'DuAnBuoc' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn', 'DuAnHienTai'} that could be matched with the properties on the other entity type - {'BuocHienTai', 'DuAnBuocs'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.275 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.285 +07:00  DBG]  No relationship from 'DuAn' to 'DuToan' has been configured by convention because there are multiple properties on one entity type - {'DuToanHienTai', 'DuToans'} that could be matched with the properties on the other entity type - {'DuAn'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.288 +07:00  DBG]  No relationship from 'DuToan' to 'DuAn' has been configured by convention because there are multiple properties on one entity type - {'DuAn'} that could be matched with the properties on the other entity type - {'DuToanHienTai', 'DuToans'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+[2026-04-17 08:39:37.365 +07:00  DBG]  The index {'BuocId'} was not created on entity type 'DanhMucBuocManHinh' as the properties are already covered by the index {'BuocId', 'ManHinhId'}.
+[2026-04-17 08:39:37.367 +07:00  DBG]  The index {'BuocId'} was not created on entity type 'DuAnBuocManHinh' as the properties are already covered by the index {'BuocId', 'ManHinhId'}.
+[2026-04-17 08:39:37.369 +07:00  DBG]  The index {'DuAnId'} was not created on entity type 'DuAnChiuTrachNhiemXuLy' as the properties are already covered by the index {'DuAnId', 'ChiuTrachNhiemXuLyId'}.
+[2026-04-17 08:39:37.371 +07:00  DBG]  The index {'DuAnId'} was not created on entity type 'DuAnNguonVon' as the properties are already covered by the index {'DuAnId', 'NguonVonId'}.
+[2026-04-17 08:39:37.374 +07:00  DBG]  The index {'NghiemThuId'} was not created on entity type 'NghiemThuPhuLucHopDong' as the properties are already covered by the index {'NghiemThuId', 'PhuLucHopDongId'}.
+[2026-04-17 08:39:37.378 +07:00  DBG]  The index {'NhaThauId'} was not created on entity type 'NhaThauNguoiDung' as the properties are already covered by the index {'NhaThauId', 'NguoiDungId'}.
+[2026-04-17 08:39:37.484 +07:00  WRN]  Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+[2026-04-17 08:39:37.524 +07:00  DBG]  The property 'GoiThau.DuAnBuocId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-04-17 08:39:37.526 +07:00  DBG]  The property 'NghiemThu.DuAnBuocId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-04-17 08:39:37.528 +07:00  DBG]  The property 'VanBanPhapLy.ChuDauTuId' was created in shadow state because there are no eligible CLR members with a matching name.
+[2026-04-17 08:39:37.692 +07:00  DBG]  Entity Framework Core 8.0.15 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.15' with options: SensitiveDataLoggingEnabled CompatibilityLevel=120
+[2026-04-17 08:39:37.743 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .AsNoTracking()
+    .Where(e => !(e.IsDeleted))
+    .Where(e => !(e.GoiThau.IsDeleted))
+    .Where(e => !(e.DuAn.IsDeleted))
+    .Select(e => new KetQuaTrungThauDto{ 
+        Id = e.Id, 
+        DuAnId = e.DuAnId, 
+        BuocId = e.BuocId, 
+        DonViTrungThauId = e.DonViTrungThauId, 
+        GiaTriTrungThau = e.GiaTriTrungThau, 
+        SoNgayTrienKhai = e.SoNgayTrienKhai, 
+        TrichYeu = e.TrichYeu, 
+        GoiThauId = e.GoiThauId, 
+        LoaiGoiThauId = e.LoaiGoiThauId, 
+        NgayEHSMT = e.NgayEHSMT, 
+        NgayMoThau = e.NgayMoThau, 
+        SoQuyetDinh = e.SoQuyetDinh, 
+        NgayQuyetDinh = e.NgayQuyetDinh, 
+        DanhSachTepDinhKem = DbSet<TepDinhKem>()
+            .Where(e => !(e.IsDeleted))
+            .OrderByDescending(e => e.Index)
+            .Where(i => i.GroupId == e.Id.ToString())
+            .Select(i => i
+                .ToDto())
+            .ToList() 
+    }
+    )
+    .AsNoTracking()
+    .Count()'
+[2026-04-17 08:39:37.845 +07:00  DBG]  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM KetQuaTrungThau AS k
+            INNER JOIN GoiThau AS g ON k.GoiThauId == g.Id
+            INNER JOIN DuAn AS d ON k.DuAnId == d.Id
+            WHERE ((Not(k.IsDeleted) && Not(k.IsDeleted)) && Not(g.IsDeleted)) && Not(d.IsDeleted)), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        QLDA.Persistence.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-04-17 08:39:37.869 +07:00  DBG]  Creating DbConnection.
+[2026-04-17 08:39:37.883 +07:00  DBG]  Created DbConnection. (13ms).
+[2026-04-17 08:39:37.888 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.021 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.026 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:39:38.033 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (4ms).
+[2026-04-17 08:39:38.035 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (9ms).
+[2026-04-17 08:39:38.041 +07:00  DBG]  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+[2026-04-17 08:39:38.079 +07:00  INF]  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+[2026-04-17 08:39:38.090 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.096 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 10ms reading results.
+[2026-04-17 08:39:38.100 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.105 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (5ms).
+[2026-04-17 08:39:38.111 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .AsNoTracking()
+    .Where(e => !(e.IsDeleted))
+    .Where(e => !(e.GoiThau.IsDeleted))
+    .Where(e => !(e.DuAn.IsDeleted))
+    .Select(e => new KetQuaTrungThauDto{ 
+        Id = e.Id, 
+        DuAnId = e.DuAnId, 
+        BuocId = e.BuocId, 
+        DonViTrungThauId = e.DonViTrungThauId, 
+        GiaTriTrungThau = e.GiaTriTrungThau, 
+        SoNgayTrienKhai = e.SoNgayTrienKhai, 
+        TrichYeu = e.TrichYeu, 
+        GoiThauId = e.GoiThauId, 
+        LoaiGoiThauId = e.LoaiGoiThauId, 
+        NgayEHSMT = e.NgayEHSMT, 
+        NgayMoThau = e.NgayMoThau, 
+        SoQuyetDinh = e.SoQuyetDinh, 
+        NgayQuyetDinh = e.NgayQuyetDinh, 
+        DanhSachTepDinhKem = DbSet<TepDinhKem>()
+            .Where(e => !(e.IsDeleted))
+            .OrderByDescending(e => e.Index)
+            .Where(i => i.GroupId == e.Id.ToString())
+            .Select(i => i
+                .ToDto())
+            .ToList() 
+    }
+    )
+    .AsNoTracking()'
+[2026-04-17 08:39:38.148 +07:00  DBG]  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<KetQuaTrungThauDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+            2 -> 2
+            3 -> 3
+            4 -> 4
+            5 -> 5
+            6 -> 6
+            7 -> 7
+            8 -> 8
+            9 -> 9
+            10 -> 10
+            11 -> 11
+            12 -> 12
+            13 -> 13
+            14 -> 14
+            15 -> Dictionary<IProperty, int> { [Property: TepDinhKem.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 15], [Property: TepDinhKem.CreatedAt (DateTimeOffset) Required ValueGenerated.OnAdd, 16], [Property: TepDinhKem.CreatedBy (string) Required, 17], [Property: TepDinhKem.FileName (string), 18], [Property: TepDinhKem.GroupId (string) Required, 19], [Property: TepDinhKem.GroupType (string) Required, 20], [Property: TepDinhKem.Index (long) Required Index ValueGenerated.OnAdd, 21], [Property: TepDinhKem.IsDeleted (bool) Required, 22], [Property: TepDinhKem.OriginalName (string), 23], [Property: TepDinhKem.ParentId (Guid?), 24], [Property: TepDinhKem.Path (string), 25], [Property: TepDinhKem.Size (long) Required, 26], [Property: TepDinhKem.Type (string), 27], [Property: TepDinhKem.UpdatedAt (DateTimeOffset?), 28], [Property: TepDinhKem.UpdatedBy (string) Required, 29] }
+            16 -> 15
+        SELECT k.Id, k.DuAnId, k.BuocId, k.DonViTrungThauId, k.GiaTriTrungThau, k.SoNgayTrienKhai, k.TrichYeu, k.GoiThauId, k.LoaiGoiThauId, k.NgayEHSMT, k.NgayMoThau, k.SoQuyetDinh, k.NgayQuyetDinh, g.Id, d.Id, t0.Id, t0.CreatedAt, t0.CreatedBy, t0.FileName, t0.GroupId, t0.GroupType, t0.Index, t0.IsDeleted, t0.OriginalName, t0.ParentId, t0.Path, t0.Size, t0.Type, t0.UpdatedAt, t0.UpdatedBy
+        FROM KetQuaTrungThau AS k
+        INNER JOIN GoiThau AS g ON k.GoiThauId == g.Id
+        INNER JOIN DuAn AS d ON k.DuAnId == d.Id
+        OUTER APPLY 
+        (
+            SELECT t.Id, t.CreatedAt, t.CreatedBy, t.FileName, t.GroupId, t.GroupType, t.Index, t.IsDeleted, t.OriginalName, t.ParentId, t.Path, t.Size, t.Type, t.UpdatedAt, t.UpdatedBy
+            FROM TepDinhKem AS t
+            WHERE Not(t.IsDeleted) && (t.GroupId == CONVERT(varchar(36), k.Id))
+        ) AS t0
+        WHERE ((Not(k.IsDeleted) && Not(k.IsDeleted)) && Not(g.IsDeleted)) && Not(d.IsDeleted)
+        ORDER BY k.Index DESC, k.Id ASC, g.Id ASC, d.Id ASC, t0.Index DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, KetQuaTrungThauDto>, 
+    QLDA.Persistence.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[2026-04-17 08:39:38.154 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.158 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.160 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:39:38.163 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:39:38.163 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (3ms).
+[2026-04-17 08:39:38.165 +07:00  DBG]  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [k].[Id], [k].[DuAnId], [k].[BuocId], [k].[DonViTrungThauId], [k].[GiaTriTrungThau], [k].[SoNgayTrienKhai], [k].[TrichYeu], [k].[GoiThauId], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[SoQuyetDinh], [k].[NgayQuyetDinh], [g].[Id], [d].[Id], [t0].[Id], [t0].[CreatedAt], [t0].[CreatedBy], [t0].[FileName], [t0].[GroupId], [t0].[GroupType], [t0].[Index], [t0].[IsDeleted], [t0].[OriginalName], [t0].[ParentId], [t0].[Path], [t0].[Size], [t0].[Type], [t0].[UpdatedAt], [t0].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+OUTER APPLY (
+    SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+    FROM [TepDinhKem] AS [t]
+    WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = CONVERT(varchar(36), [k].[Id])
+) AS [t0]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [k].[Index] DESC, [k].[Id], [g].[Id], [d].[Id], [t0].[Index] DESC
+[2026-04-17 08:39:38.176 +07:00  INF]  Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [k].[Id], [k].[DuAnId], [k].[BuocId], [k].[DonViTrungThauId], [k].[GiaTriTrungThau], [k].[SoNgayTrienKhai], [k].[TrichYeu], [k].[GoiThauId], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[SoQuyetDinh], [k].[NgayQuyetDinh], [g].[Id], [d].[Id], [t0].[Id], [t0].[CreatedAt], [t0].[CreatedBy], [t0].[FileName], [t0].[GroupId], [t0].[GroupType], [t0].[Index], [t0].[IsDeleted], [t0].[OriginalName], [t0].[ParentId], [t0].[Path], [t0].[Size], [t0].[Type], [t0].[UpdatedAt], [t0].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+OUTER APPLY (
+    SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+    FROM [TepDinhKem] AS [t]
+    WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = CONVERT(varchar(36), [k].[Id])
+) AS [t0]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [k].[Index] DESC, [k].[Id], [g].[Id], [d].[Id], [t0].[Index] DESC
+[2026-04-17 08:39:38.184 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.186 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 6ms reading results.
+[2026-04-17 08:39:38.188 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.190 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (2ms).
+[2026-04-17 08:39:38.196 +07:00  WRN]  Messenger Long Running Request: KetQuaTrungThauGetDanhSachQuery (1610 milliseconds)  {"DuAnId":null,"BuocId":null,"GoiThauId":null,"GlobalFilter":null,"IsNoTracking":true,"PageIndex":0,"PageSize":0}
+[2026-04-17 08:39:38.200 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:39:38.203 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:39:38.204 +07:00  DBG]  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-04-17 08:39:38.205 +07:00  DBG]  Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-04-17 08:39:38.207 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2026-04-17 08:39:38.209 +07:00  INF]  Executing ObjectResult, writing value of type 'BuildingBlocks.Application.Common.DTOs.ResultApi'.
+[2026-04-17 08:39:38.233 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-17 08:39:38.238 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi) in 1815.2094ms
+[2026-04-17 08:39:38.242 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:38.247 +07:00  INF]  HTTP GET /api/ket-qua-trung-thau/danh-sach-tien-do responded 200 in 1887.1633 ms
+[2026-04-17 08:39:38.254 +07:00  INF]  The response could not be cached for this request.
+[2026-04-17 08:39:38.259 +07:00  DBG]  Connection id "0HNKS48NDJG3U" completed keep alive response.
+[2026-04-17 08:39:38.264 +07:00  DBG]  'AppDbContext' disposed.
+[2026-04-17 08:39:38.272 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:38.279 +07:00  DBG]  Disposed connection to database '' on server '' (6ms).
+[2026-04-17 08:39:38.282 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/danh-sach-tien-do - 200 null application/json; charset=utf-8 2020.0929ms
+[2026-04-17 08:39:54.696 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/{7ed53c56-61fa-4eec-acc8-708f1b26cd87}/chi-tiet - null null
+[2026-04-17 08:39:54.728 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/{7ed53c56-61fa-4eec-acc8-708f1b26cd87}/chi-tiet'
+[2026-04-17 08:39:54.732 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/{id}/chi-tiet' is valid for the request path '/api/ket-qua-trung-thau/{7ed53c56-61fa-4eec-acc8-708f1b26cd87}/chi-tiet'
+[2026-04-17 08:39:54.735 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:54.739 +07:00  DBG]  The request cannot be served from cache because it contains a 'no-cache' cache directive.
+[2026-04-17 08:39:54.741 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:39:54.743 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:54.748 +07:00  INF]  Route matched with {action = "Get", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Get(System.Guid) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:39:54.750 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:39:54.752 +07:00  DBG]  Execution plan of resource filters (in the following order): ["None"]
+[2026-04-17 08:39:54.753 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:39:54.756 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:39:54.758 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:39:54.760 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:39:54.762 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:39:54.763 +07:00  DBG]  Attempting to bind parameter 'id' of type 'System.Guid' ...
+[2026-04-17 08:39:54.765 +07:00  DBG]  Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+[2026-04-17 08:39:54.767 +07:00  DBG]  Done attempting to bind parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:39:54.767 +07:00  DBG]  Done attempting to bind parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:39:54.768 +07:00  DBG]  Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+[2026-04-17 08:39:54.770 +07:00  DBG]  Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:39:54.774 +07:00  INF]  Messenger Request: KetQuaTrungThauGetQuery {"Id":"7ed53c56-61fa-4eec-acc8-708f1b26cd87","ThrowIfNull":true,"IsNoTracking":true}
+[2026-04-17 08:39:54.812 +07:00  DBG]  Entity Framework Core 8.0.15 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.15' with options: SensitiveDataLoggingEnabled CompatibilityLevel=120
+[2026-04-17 08:39:54.815 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .Where(e => e.Id == __request_Id_0)
+    .AsNoTracking()
+    .FirstOrDefault()'
+[2026-04-17 08:39:54.823 +07:00  DBG]  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<KetQuaTrungThau>(
+    asyncEnumerable: new SingleQueryingEnumerable<KetQuaTrungThau>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: KetQuaTrungThau.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: KetQuaTrungThau.BuocId (int?) FK Index, 1], [Property: KetQuaTrungThau.CreatedAt (DateTimeOffset) Required ValueGenerated.OnAdd, 2], [Property: KetQuaTrungThau.CreatedBy (string) Required, 3], [Property: KetQuaTrungThau.DonViTrungThauId (Guid?) FK Index, 4], [Property: KetQuaTrungThau.DuAnId (Guid) Required FK Index, 5], [Property: KetQuaTrungThau.GiaTriTrungThau (long) Required, 6], [Property: KetQuaTrungThau.GoiThauId (Guid) Required FK Index, 7], [Property: KetQuaTrungThau.Index (long) Required Index ValueGenerated.OnAdd, 8], [Property: KetQuaTrungThau.IsDeleted (bool) Required, 9], [Property: KetQuaTrungThau.LoaiGoiThauId (int?) FK Index, 10], [Property: KetQuaTrungThau.NgayEHSMT (DateTimeOffset?), 11], [Property: KetQuaTrungThau.NgayMoThau (DateTimeOffset?), 12], [Property: KetQuaTrungThau.NgayQuyetDinh (DateTimeOffset?), 13], [Property: KetQuaTrungThau.SoNgayThucHienHopDong (long?), 14], [Property: KetQuaTrungThau.SoNgayTrienKhai (long?), 15], [Property: KetQuaTrungThau.SoQuyetDinh (string), 16], [Property: KetQuaTrungThau.TrichYeu (string), 17], [Property: KetQuaTrungThau.UpdatedAt (DateTimeOffset?), 18], [Property: KetQuaTrungThau.UpdatedBy (string) Required, 19] }
+            SELECT TOP(1) k.Id, k.BuocId, k.CreatedAt, k.CreatedBy, k.DonViTrungThauId, k.DuAnId, k.GiaTriTrungThau, k.GoiThauId, k.Index, k.IsDeleted, k.LoaiGoiThauId, k.NgayEHSMT, k.NgayMoThau, k.NgayQuyetDinh, k.SoNgayThucHienHopDong, k.SoNgayTrienKhai, k.SoQuyetDinh, k.TrichYeu, k.UpdatedAt, k.UpdatedBy
+            FROM KetQuaTrungThau AS k
+            WHERE Not(k.IsDeleted) && (k.Id == @__request_Id_0)
+            ORDER BY k.Index DESC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, KetQuaTrungThau>, 
+        QLDA.Persistence.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-04-17 08:39:54.828 +07:00  DBG]  Creating DbConnection.
+[2026-04-17 08:39:54.831 +07:00  DBG]  Created DbConnection. (2ms).
+[2026-04-17 08:39:54.832 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.835 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.837 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:39:54.839 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:39:54.842 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (5ms).
+[2026-04-17 08:39:54.847 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:39:54.861 +07:00  INF]  Executed DbCommand (16ms) [Parameters=[@__request_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:39:54.869 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.871 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 5ms reading results.
+[2026-04-17 08:39:54.873 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.875 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (1ms).
+[2026-04-17 08:39:54.880 +07:00  INF]  Messenger Request: GetDanhSachTepDinhKemQuery {"GroupId":["7ed53c56-61fa-4eec-acc8-708f1b26cd87"],"EGroupTypes":[]}
+[2026-04-17 08:39:54.886 +07:00  DBG]  Compiling query expression: 
+'DbSet<TepDinhKem>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .Where(o => __request_GroupId_0.Contains(o.GroupId))'
+[2026-04-17 08:39:54.896 +07:00  DBG]  Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TepDinhKem>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TepDinhKem.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: TepDinhKem.CreatedAt (DateTimeOffset) Required ValueGenerated.OnAdd, 1], [Property: TepDinhKem.CreatedBy (string) Required, 2], [Property: TepDinhKem.FileName (string), 3], [Property: TepDinhKem.GroupId (string) Required, 4], [Property: TepDinhKem.GroupType (string) Required, 5], [Property: TepDinhKem.Index (long) Required Index ValueGenerated.OnAdd, 6], [Property: TepDinhKem.IsDeleted (bool) Required, 7], [Property: TepDinhKem.OriginalName (string), 8], [Property: TepDinhKem.ParentId (Guid?), 9], [Property: TepDinhKem.Path (string), 10], [Property: TepDinhKem.Size (long) Required, 11], [Property: TepDinhKem.Type (string), 12], [Property: TepDinhKem.UpdatedAt (DateTimeOffset?), 13], [Property: TepDinhKem.UpdatedBy (string) Required, 14] }
+        SELECT t.Id, t.CreatedAt, t.CreatedBy, t.FileName, t.GroupId, t.GroupType, t.Index, t.IsDeleted, t.OriginalName, t.ParentId, t.Path, t.Size, t.Type, t.UpdatedAt, t.UpdatedBy
+        FROM TepDinhKem AS t
+        WHERE Not(t.IsDeleted) && t.GroupId IN (@__request_GroupId_0)
+        ORDER BY t.Index DESC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TepDinhKem>, 
+    QLDA.Persistence.AppDbContext, 
+    False, 
+    False, 
+    True
+)'
+[2026-04-17 08:39:54.900 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.903 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.905 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:39:54.907 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:39:54.908 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (3ms).
+[2026-04-17 08:39:54.909 +07:00  DBG]  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+FROM [TepDinhKem] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = N'7ed53c56-61fa-4eec-acc8-708f1b26cd87'
+ORDER BY [t].[Index] DESC
+[2026-04-17 08:39:54.913 +07:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+FROM [TepDinhKem] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = N'7ed53c56-61fa-4eec-acc8-708f1b26cd87'
+ORDER BY [t].[Index] DESC
+[2026-04-17 08:39:54.917 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.918 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:39:54.920 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.921 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (1ms).
+[2026-04-17 08:39:54.924 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:39:54.927 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:39:54.929 +07:00  DBG]  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-04-17 08:39:54.930 +07:00  DBG]  Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-04-17 08:39:54.931 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2026-04-17 08:39:54.932 +07:00  INF]  Executing ObjectResult, writing value of type 'BuildingBlocks.Application.Common.DTOs.ResultApi'.
+[2026-04-17 08:39:54.936 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-17 08:39:54.938 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi) in 178.2715ms
+[2026-04-17 08:39:54.942 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:39:54.943 +07:00  INF]  HTTP GET /api/ket-qua-trung-thau/{7ed53c56-61fa-4eec-acc8-708f1b26cd87}/chi-tiet responded 200 in 202.8833 ms
+[2026-04-17 08:39:54.946 +07:00  INF]  The response could not be cached for this request.
+[2026-04-17 08:39:54.948 +07:00  DBG]  Connection id "0HNKS48NDJG3U" completed keep alive response.
+[2026-04-17 08:39:54.949 +07:00  DBG]  'AppDbContext' disposed.
+[2026-04-17 08:39:54.952 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:39:54.955 +07:00  DBG]  Disposed connection to database '' on server '' (3ms).
+[2026-04-17 08:39:54.958 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/{7ed53c56-61fa-4eec-acc8-708f1b26cd87}/chi-tiet - 200 null application/json; charset=utf-8 261.557ms
+[2026-04-17 08:41:32.871 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - application/json 364
+[2026-04-17 08:41:32.892 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:41:32.893 +07:00  DBG]  Request matched endpoint '405 HTTP Method Not Supported'
+[2026-04-17 08:41:32.895 +07:00  DBG]  The request cannot be served from cache because it contains a 'no-cache' cache directive.
+[2026-04-17 08:41:32.896 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:41:32.898 +07:00  INF]  Executing endpoint '405 HTTP Method Not Supported'
+[2026-04-17 08:41:32.899 +07:00  INF]  Executed endpoint '405 HTTP Method Not Supported'
+[2026-04-17 08:41:32.900 +07:00  INF]  HTTP GET /api/ket-qua-trung-thau/cap-nhat responded 405 in 4.1745 ms
+[2026-04-17 08:41:32.902 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-17 08:41:32.903 +07:00  INF]  The response could not be cached for this request.
+[2026-04-17 08:41:32.903 +07:00  DBG]  Connection id "0HNKS48NDJG3U" completed keep alive response.
+[2026-04-17 08:41:32.904 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - 405 0 null 32.8749ms
+[2026-04-17 08:41:32.908 +07:00  DBG]  Connection id "0HNKS48NDJG3U", Request id "0HNKS48NDJG3U:00000003": started reading request body.
+[2026-04-17 08:41:32.909 +07:00  DBG]  Connection id "0HNKS48NDJG3U", Request id "0HNKS48NDJG3U:00000003": done reading request body.
+[2026-04-17 08:41:38.016 +07:00  INF]  Request starting HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - application/json 364
+[2026-04-17 08:41:38.022 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:41:38.026 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/cap-nhat' is valid for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:41:38.030 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:41:38.032 +07:00  DBG]  The request cannot be served from cache because it uses the HTTP method: PUT.
+[2026-04-17 08:41:38.035 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:41:38.041 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:41:38.050 +07:00  INF]  Route matched with {action = "Update", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Update(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto, BuildingBlocks.Domain.Interfaces.IUnitOfWork, System.Threading.CancellationToken) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:41:38.055 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:41:38.057 +07:00  DBG]  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+[2026-04-17 08:41:38.059 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:41:38.062 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:41:38.063 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:41:38.065 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:41:38.068 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:41:38.070 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:41:38.072 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' using the name '' in request data ...
+[2026-04-17 08:41:38.074 +07:00  DBG]  Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-04-17 08:41:38.082 +07:00  DBG]  Connection id "0HNKS48NDJG3U", Request id "0HNKS48NDJG3U:00000004": started reading request body.
+[2026-04-17 08:41:38.084 +07:00  DBG]  Connection id "0HNKS48NDJG3U", Request id "0HNKS48NDJG3U:00000004": done reading request body.
+[2026-04-17 08:41:38.097 +07:00  DBG]  JSON input formatter succeeded, deserializing to type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'
+[2026-04-17 08:41:38.099 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:41:38.100 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:41:38.101 +07:00  DBG]  Attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:41:38.109 +07:00  DBG]  Done attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:41:38.110 +07:00  DBG]  Attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:41:38.113 +07:00  DBG]  Done attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:41:38.114 +07:00  DBG]  Attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:41:38.115 +07:00  DBG]  Done attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:41:38.116 +07:00  DBG]  Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:41:38.117 +07:00  DBG]  Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:41:38.118 +07:00  DBG]  Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:41:38.119 +07:00  DBG]  Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:41:38.130 +07:00  DBG]  Entity Framework Core 8.0.15 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.15' with options: SensitiveDataLoggingEnabled CompatibilityLevel=120
+[2026-04-17 08:41:38.135 +07:00  DBG]  Creating DbConnection.
+[2026-04-17 08:41:38.137 +07:00  DBG]  Created DbConnection. (1ms).
+[2026-04-17 08:41:38.137 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.139 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.143 +07:00  DBG]  Beginning transaction with isolation level 'ReadCommitted'.
+[2026-04-17 08:41:38.149 +07:00  DBG]  Began transaction with isolation level 'ReadCommitted'.
+[2026-04-17 08:41:38.158 +07:00  INF]  Messenger Request: KetQuaTrungThauUpdateCommand {"Dto":{"Id":"7ed53c56-61fa-4eec-acc8-708f1b26cd87","GoiThauId":"85629700-f59b-485d-b401-7bfc757ea591","GiaTriTrungThau":5500000,"DonViTrungThauId":null,"SoNgayTrienKhai":25,"SoNgayThucHienHopDong":60,"TrichYeu":"Updated with soNgayThucHienHopDong","LoaiGoiThauId":null,"NgayEHSMT":null,"NgayMoThau":null,"SoQuyetDinh":"QD-NEW-UPDATE","NgayQuyetDinh":null,"DanhSachTepDinhKem":null}}
+[2026-04-17 08:41:38.167 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .Any(e => e.Id != __request_Dto_Id_0 && e.SoQuyetDinh.ToLower() == __ToLower_1)'
+[2026-04-17 08:41:38.172 +07:00  DBG]  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM KetQuaTrungThau AS k
+                WHERE Not(k.IsDeleted) && ((k.Id != @__request_Dto_Id_0) && (LOWER(k.SoQuyetDinh) == @__ToLower_1)))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        QLDA.Persistence.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-04-17 08:41:38.178 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:41:38.179 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:41:38.181 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:41:38.182 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__ToLower_1='qd-new-update' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND LOWER([k].[SoQuyetDinh]) = @__ToLower_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:41:38.187 +07:00  INF]  Executed DbCommand (5ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__ToLower_1='qd-new-update' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND LOWER([k].[SoQuyetDinh]) = @__ToLower_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:41:38.188 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.190 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:41:38.192 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .Any(e => e.Id != __request_Dto_Id_0 && e.GoiThauId == __request_Dto_GoiThauId_1)'
+[2026-04-17 08:41:38.194 +07:00  DBG]  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM KetQuaTrungThau AS k
+                WHERE Not(k.IsDeleted) && ((k.Id != @__request_Dto_Id_0) && (k.GoiThauId == @__request_Dto_GoiThauId_1)))), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        QLDA.Persistence.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-04-17 08:41:38.195 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:41:38.196 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:41:38.197 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:41:38.199 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__request_Dto_GoiThauId_1='85629700-f59b-485d-b401-7bfc757ea591'], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND [k].[GoiThauId] = @__request_Dto_GoiThauId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:41:38.201 +07:00  INF]  Executed DbCommand (3ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__request_Dto_GoiThauId_1='85629700-f59b-485d-b401-7bfc757ea591'], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND [k].[GoiThauId] = @__request_Dto_GoiThauId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:41:38.203 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.204 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 0ms reading results.
+[2026-04-17 08:41:38.205 +07:00  DBG]  Compiling query expression: 
+'DbSet<KetQuaTrungThau>()
+    .Where(e => !(e.IsDeleted))
+    .OrderByDescending(e => e.Index)
+    .FirstOrDefault(e => e.Id == __request_Dto_Id_0)'
+[2026-04-17 08:41:38.210 +07:00  DBG]  Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<KetQuaTrungThau>(
+    asyncEnumerable: new SingleQueryingEnumerable<KetQuaTrungThau>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: KetQuaTrungThau.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: KetQuaTrungThau.BuocId (int?) FK Index, 1], [Property: KetQuaTrungThau.CreatedAt (DateTimeOffset) Required ValueGenerated.OnAdd, 2], [Property: KetQuaTrungThau.CreatedBy (string) Required, 3], [Property: KetQuaTrungThau.DonViTrungThauId (Guid?) FK Index, 4], [Property: KetQuaTrungThau.DuAnId (Guid) Required FK Index, 5], [Property: KetQuaTrungThau.GiaTriTrungThau (long) Required, 6], [Property: KetQuaTrungThau.GoiThauId (Guid) Required FK Index, 7], [Property: KetQuaTrungThau.Index (long) Required Index ValueGenerated.OnAdd, 8], [Property: KetQuaTrungThau.IsDeleted (bool) Required, 9], [Property: KetQuaTrungThau.LoaiGoiThauId (int?) FK Index, 10], [Property: KetQuaTrungThau.NgayEHSMT (DateTimeOffset?), 11], [Property: KetQuaTrungThau.NgayMoThau (DateTimeOffset?), 12], [Property: KetQuaTrungThau.NgayQuyetDinh (DateTimeOffset?), 13], [Property: KetQuaTrungThau.SoNgayThucHienHopDong (long?), 14], [Property: KetQuaTrungThau.SoNgayTrienKhai (long?), 15], [Property: KetQuaTrungThau.SoQuyetDinh (string), 16], [Property: KetQuaTrungThau.TrichYeu (string), 17], [Property: KetQuaTrungThau.UpdatedAt (DateTimeOffset?), 18], [Property: KetQuaTrungThau.UpdatedBy (string) Required, 19] }
+            SELECT TOP(1) k.Id, k.BuocId, k.CreatedAt, k.CreatedBy, k.DonViTrungThauId, k.DuAnId, k.GiaTriTrungThau, k.GoiThauId, k.Index, k.IsDeleted, k.LoaiGoiThauId, k.NgayEHSMT, k.NgayMoThau, k.NgayQuyetDinh, k.SoNgayThucHienHopDong, k.SoNgayTrienKhai, k.SoQuyetDinh, k.TrichYeu, k.UpdatedAt, k.UpdatedBy
+            FROM KetQuaTrungThau AS k
+            WHERE Not(k.IsDeleted) && (k.Id == @__request_Dto_Id_0)
+            ORDER BY k.Index DESC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, KetQuaTrungThau>, 
+        QLDA.Persistence.AppDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+[2026-04-17 08:41:38.211 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:41:38.212 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:41:38.213 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:41:38.213 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Dto_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:41:38.216 +07:00  INF]  Executed DbCommand (3ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Dto_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:41:38.231 +07:00  DBG]  Context 'AppDbContext' started tracking 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}'.
+[2026-04-17 08:41:38.265 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.267 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 50ms reading results.
+[2026-04-17 08:41:38.275 +07:00  DBG]  The 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'.
+[2026-04-17 08:41:38.281 +07:00  DBG]  SaveChanges starting for 'AppDbContext'.
+[2026-04-17 08:41:38.285 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:41:38.293 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:41:38.296 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:41:38.296 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:41:38.299 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:41:38.300 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:41:38.301 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:41:38.302 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:41:38.345 +07:00  DBG]  Creating transaction savepoint.
+[2026-04-17 08:41:38.352 +07:00  DBG]  Created transaction savepoint.
+[2026-04-17 08:41:38.357 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:41:38.359 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:41:38.364 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (7ms).
+[2026-04-17 08:41:38.366 +07:00  DBG]  Executing DbCommand [Parameters=[@p19='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @p0=NULL (DbType = Int32), @p1='2026-04-16T19:29:47.1040546+00:00', @p2='admin' (Nullable = false) (Size = 4000), @p3=NULL (DbType = Guid), @p4='fad9b793-80c4-4827-9673-0cddad774bbe', @p5='5500000', @p6='85629700-f59b-485d-b401-7bfc757ea591', @p7='1776367787', @p8='False', @p9=NULL (DbType = Int32), @p10=NULL (DbType = DateTimeOffset), @p11=NULL (DbType = DateTimeOffset), @p12=NULL (DbType = DateTimeOffset), @p13='60' (Nullable = true), @p14='25' (Nullable = true), @p15='QD-NEW-UPDATE' (Size = 4000), @p16='Updated with soNgayThucHienHopDong' (Size = 4000), @p17='2026-04-17T01:41:38.2843142+00:00' (Nullable = true), @p18='0' (Nullable = false) (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [KetQuaTrungThau] SET [BuocId] = @p0, [CreatedAt] = @p1, [CreatedBy] = @p2, [DonViTrungThauId] = @p3, [DuAnId] = @p4, [GiaTriTrungThau] = @p5, [GoiThauId] = @p6, [Index] = @p7, [IsDeleted] = @p8, [LoaiGoiThauId] = @p9, [NgayEHSMT] = @p10, [NgayMoThau] = @p11, [NgayQuyetDinh] = @p12, [SoNgayThucHienHopDong] = @p13, [SoNgayTrienKhai] = @p14, [SoQuyetDinh] = @p15, [TrichYeu] = @p16, [UpdatedAt] = @p17, [UpdatedBy] = @p18
+OUTPUT 1
+WHERE [Id] = @p19;
+[2026-04-17 08:41:38.376 +07:00  INF]  Executed DbCommand (10ms) [Parameters=[@p19='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @p0=NULL (DbType = Int32), @p1='2026-04-16T19:29:47.1040546+00:00', @p2='admin' (Nullable = false) (Size = 4000), @p3=NULL (DbType = Guid), @p4='fad9b793-80c4-4827-9673-0cddad774bbe', @p5='5500000', @p6='85629700-f59b-485d-b401-7bfc757ea591', @p7='1776367787', @p8='False', @p9=NULL (DbType = Int32), @p10=NULL (DbType = DateTimeOffset), @p11=NULL (DbType = DateTimeOffset), @p12=NULL (DbType = DateTimeOffset), @p13='60' (Nullable = true), @p14='25' (Nullable = true), @p15='QD-NEW-UPDATE' (Size = 4000), @p16='Updated with soNgayThucHienHopDong' (Size = 4000), @p17='2026-04-17T01:41:38.2843142+00:00' (Nullable = true), @p18='0' (Nullable = false) (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [KetQuaTrungThau] SET [BuocId] = @p0, [CreatedAt] = @p1, [CreatedBy] = @p2, [DonViTrungThauId] = @p3, [DuAnId] = @p4, [GiaTriTrungThau] = @p5, [GoiThauId] = @p6, [Index] = @p7, [IsDeleted] = @p8, [LoaiGoiThauId] = @p9, [NgayEHSMT] = @p10, [NgayMoThau] = @p11, [NgayQuyetDinh] = @p12, [SoNgayThucHienHopDong] = @p13, [SoNgayTrienKhai] = @p14, [SoQuyetDinh] = @p15, [TrichYeu] = @p16, [UpdatedAt] = @p17, [UpdatedBy] = @p18
+OUTPUT 1
+WHERE [Id] = @p19;
+[2026-04-17 08:41:38.381 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.383 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 5ms reading results.
+[2026-04-17 08:41:38.387 +07:00  DBG]  The 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'.
+[2026-04-17 08:41:38.391 +07:00  DBG]  SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[2026-04-17 08:41:38.394 +07:00  DBG]  Committing transaction.
+[2026-04-17 08:41:38.397 +07:00  DBG]  Committed transaction.
+[2026-04-17 08:41:38.400 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.401 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (1ms).
+[2026-04-17 08:41:38.404 +07:00  DBG]  Disposing transaction.
+[2026-04-17 08:41:38.405 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:41:38.408 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:41:38.408 +07:00  DBG]  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-04-17 08:41:38.408 +07:00  DBG]  Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-04-17 08:41:38.409 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2026-04-17 08:41:38.410 +07:00  INF]  Executing ObjectResult, writing value of type 'BuildingBlocks.Application.Common.DTOs.ResultApi'.
+[2026-04-17 08:41:38.412 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi) in 347.2197ms
+[2026-04-17 08:41:38.413 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:41:38.415 +07:00  INF]  HTTP PUT /api/ket-qua-trung-thau/cap-nhat responded 200 in 379.8579 ms
+[2026-04-17 08:41:38.417 +07:00  DBG]  Connection id "0HNKS48NDJG3U" completed keep alive response.
+[2026-04-17 08:41:38.418 +07:00  DBG]  'AppDbContext' disposed.
+[2026-04-17 08:41:38.419 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:41:38.420 +07:00  DBG]  Disposed connection to database '' on server '' (1ms).
+[2026-04-17 08:41:38.422 +07:00  INF]  Request finished HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - 200 null application/json; charset=utf-8 405.4241ms

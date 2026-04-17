@@ -1,0 +1,60 @@
+[2026-04-17 02:34:13.073 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-17 02:34:13.253 +07:00  DBG]  Hosting starting
+[2026-04-17 02:34:13.268 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-17 02:34:13.282 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-17 02:34:13.293 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-17 02:34:13.303 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-17 02:34:13.309 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:34:13.314 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-17 02:34:13.318 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:34:13.325 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-17 02:34:13.330 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-17 02:34:13.336 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-17 02:34:13.339 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-17 02:34:13.396 +07:00  ERR]  Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5082: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-04-17 02:36:12.961 +07:00  DBG]  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+[2026-04-17 02:36:13.112 +07:00  DBG]  Hosting starting
+[2026-04-17 02:36:13.123 +07:00  INF]  User profile is available. Using 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-17 02:36:13.131 +07:00  DBG]  Reading data from file 'C:\Users\thinl\AppData\Local\ASP.NET\DataProtection-Keys\key-3f1800c4-f18c-465d-9671-726e96d445e6.xml'.
+[2026-04-17 02:36:13.136 +07:00  DBG]  Found key {3f1800c4-f18c-465d-9671-726e96d445e6}.
+[2026-04-17 02:36:13.142 +07:00  DBG]  Considering key {3f1800c4-f18c-465d-9671-726e96d445e6} with expiration date 2026-07-14 17:47:22Z as default key.
+[2026-04-17 02:36:13.144 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:36:13.146 +07:00  DBG]  Decrypting secret element using Windows DPAPI.
+[2026-04-17 02:36:13.147 +07:00  DBG]  Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+[2026-04-17 02:36:13.149 +07:00  DBG]  Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+[2026-04-17 02:36:13.150 +07:00  DBG]  Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+[2026-04-17 02:36:13.151 +07:00  DBG]  Using key {3f1800c4-f18c-465d-9671-726e96d445e6} as the default key.
+[2026-04-17 02:36:13.151 +07:00  DBG]  Key ring with default key {3f1800c4-f18c-465d-9671-726e96d445e6} was loaded during application startup.
+[2026-04-17 02:36:13.245 +07:00  WRN]  The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+[2026-04-17 02:36:13.268 +07:00  INF]  Now listening on: http://localhost:5082
+[2026-04-17 02:36:13.269 +07:00  INF]  Now listening on: https://localhost:5092
+[2026-04-17 02:36:13.269 +07:00  DBG]  Loaded hosting startup assembly QLDA.WebApi
+[2026-04-17 02:36:13.269 +07:00  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-17 02:36:13.269 +07:00  INF]  Hosting environment: Development
+[2026-04-17 02:36:13.269 +07:00  INF]  Content root path: E:\SER\QLDA.WebApi
+[2026-04-17 02:36:13.269 +07:00  DBG]  Hosting started
