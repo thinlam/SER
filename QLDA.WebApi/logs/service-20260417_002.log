@@ -736,3 +736,393 @@ WHERE [Id] = @p19;
 [2026-04-17 08:41:38.419 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
 [2026-04-17 08:41:38.420 +07:00  DBG]  Disposed connection to database '' on server '' (1ms).
 [2026-04-17 08:41:38.422 +07:00  INF]  Request finished HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - 200 null application/json; charset=utf-8 405.4241ms
+[2026-04-17 08:43:48.572 +07:00  DBG]  Connection id "0HNKS48NDJG3U" disconnecting.
+[2026-04-17 08:43:48.574 +07:00  DBG]  Connection id "0HNKS48NDJG3U" stopped.
+[2026-04-17 08:43:48.575 +07:00  DBG]  Connection id "0HNKS48NDJG3U" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:46:07.354 +07:00  DBG]  Connection id "0HNKS48NDJG3V" accepted.
+[2026-04-17 08:46:07.355 +07:00  DBG]  Connection id "0HNKS48NDJG3V" received FIN.
+[2026-04-17 08:46:07.359 +07:00  DBG]  Connection id "0HNKS48NDJG3V" started.
+[2026-04-17 08:46:07.359 +07:00  DBG]  Connection id "0HNKS48NDJG40" accepted.
+[2026-04-17 08:46:07.365 +07:00  DBG]  Connection id "0HNKS48NDJG3V" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:46:07.366 +07:00  DBG]  Connection id "0HNKS48NDJG40" started.
+[2026-04-17 08:46:07.367 +07:00  DBG]  Connection id "0HNKS48NDJG3V" disconnecting.
+[2026-04-17 08:46:07.368 +07:00  INF]  Request starting HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - application/json 388
+[2026-04-17 08:46:07.369 +07:00  DBG]  Connection id "0HNKS48NDJG3V" stopped.
+[2026-04-17 08:46:07.370 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:46:07.372 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/cap-nhat' is valid for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:46:07.373 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:46:07.374 +07:00  DBG]  The request cannot be served from cache because it uses the HTTP method: PUT.
+[2026-04-17 08:46:07.375 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:46:07.376 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:46:07.377 +07:00  INF]  Route matched with {action = "Update", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Update(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto, BuildingBlocks.Domain.Interfaces.IUnitOfWork, System.Threading.CancellationToken) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:46:07.378 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:46:07.379 +07:00  DBG]  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+[2026-04-17 08:46:07.380 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:46:07.382 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:46:07.383 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:46:07.384 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:46:07.386 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:46:07.387 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:46:07.387 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' using the name '' in request data ...
+[2026-04-17 08:46:07.389 +07:00  DBG]  Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-04-17 08:46:07.390 +07:00  DBG]  Connection id "0HNKS48NDJG40", Request id "0HNKS48NDJG40:00000001": started reading request body.
+[2026-04-17 08:46:07.391 +07:00  DBG]  Connection id "0HNKS48NDJG40", Request id "0HNKS48NDJG40:00000001": done reading request body.
+[2026-04-17 08:46:07.397 +07:00  DBG]  JSON input formatter threw an exception: The JSON value could not be converted to System.Nullable`1[System.DateTimeOffset]. Path: $.ngayQuyetDinh | LineNumber: 10 | BytePositionInLine: 21.
+[2026-04-17 08:46:07.397 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:46:07.398 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:46:07.399 +07:00  DBG]  Attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:46:07.401 +07:00  DBG]  Done attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:46:07.402 +07:00  DBG]  Attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:46:07.403 +07:00  DBG]  Done attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:46:07.404 +07:00  DBG]  Attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:46:07.406 +07:00  DBG]  Done attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:46:07.407 +07:00  DBG]  Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:46:07.407 +07:00  DBG]  Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:46:07.408 +07:00  DBG]  Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:46:07.409 +07:00  DBG]  Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:46:07.410 +07:00  DBG]  The request has model state errors, returning an error response.
+[2026-04-17 08:46:07.412 +07:00  DBG]  Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+[2026-04-17 08:46:07.413 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:46:07.415 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:46:07.416 +07:00  DBG]  Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+[2026-04-17 08:46:07.417 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+[2026-04-17 08:46:07.418 +07:00  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2026-04-17 08:46:07.429 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi) in 44.4189ms
+[2026-04-17 08:46:07.430 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:46:07.431 +07:00  INF]  HTTP PUT /api/ket-qua-trung-thau/cap-nhat responded 400 in 56.4095 ms
+[2026-04-17 08:46:07.432 +07:00  DBG]  Connection id "0HNKS48NDJG40" completed keep alive response.
+[2026-04-17 08:46:07.433 +07:00  INF]  Request finished HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - 400 null application/problem+json; charset=utf-8 65.0846ms
+[2026-04-17 08:48:01.281 +07:00  INF]  Request starting HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - application/json 368
+[2026-04-17 08:48:01.284 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:48:01.285 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/cap-nhat' is valid for the request path '/api/ket-qua-trung-thau/cap-nhat'
+[2026-04-17 08:48:01.286 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:48:01.287 +07:00  DBG]  The request cannot be served from cache because it uses the HTTP method: PUT.
+[2026-04-17 08:48:01.288 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:48:01.289 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:48:01.290 +07:00  INF]  Route matched with {action = "Update", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Update(QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto, BuildingBlocks.Domain.Interfaces.IUnitOfWork, System.Threading.CancellationToken) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:48:01.292 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:48:01.293 +07:00  DBG]  Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ConsumesAttribute"]
+[2026-04-17 08:48:01.295 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:48:01.297 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:48:01.298 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:48:01.300 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:48:01.301 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:48:01.302 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:48:01.304 +07:00  DBG]  Attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' using the name '' in request data ...
+[2026-04-17 08:48:01.305 +07:00  DBG]  Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+[2026-04-17 08:48:01.306 +07:00  DBG]  Connection id "0HNKS48NDJG40", Request id "0HNKS48NDJG40:00000002": started reading request body.
+[2026-04-17 08:48:01.308 +07:00  DBG]  Connection id "0HNKS48NDJG40", Request id "0HNKS48NDJG40:00000002": done reading request body.
+[2026-04-17 08:48:01.309 +07:00  DBG]  JSON input formatter succeeded, deserializing to type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'
+[2026-04-17 08:48:01.310 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:48:01.311 +07:00  DBG]  Done attempting to bind parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:48:01.312 +07:00  DBG]  Attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto' ...
+[2026-04-17 08:48:01.313 +07:00  DBG]  Done attempting to validate the bound parameter 'updateDto' of type 'QLDA.Application.KetQuaTrungThaus.DTOs.KetQuaTrungThauUpdateDto'.
+[2026-04-17 08:48:01.314 +07:00  DBG]  Attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:48:01.316 +07:00  DBG]  Done attempting to bind parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:48:01.317 +07:00  DBG]  Attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork' ...
+[2026-04-17 08:48:01.319 +07:00  DBG]  Done attempting to validate the bound parameter 'unitOfWork' of type 'BuildingBlocks.Domain.Interfaces.IUnitOfWork'.
+[2026-04-17 08:48:01.320 +07:00  DBG]  Attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:48:01.321 +07:00  DBG]  Done attempting to bind parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:48:01.322 +07:00  DBG]  Attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken' ...
+[2026-04-17 08:48:01.323 +07:00  DBG]  Done attempting to validate the bound parameter 'cancellationToken' of type 'System.Threading.CancellationToken'.
+[2026-04-17 08:48:01.327 +07:00  DBG]  Entity Framework Core 8.0.15 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.15' with options: SensitiveDataLoggingEnabled CompatibilityLevel=120
+[2026-04-17 08:48:01.329 +07:00  DBG]  Creating DbConnection.
+[2026-04-17 08:48:01.330 +07:00  DBG]  Created DbConnection. (0ms).
+[2026-04-17 08:48:01.331 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.336 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.337 +07:00  DBG]  Beginning transaction with isolation level 'ReadCommitted'.
+[2026-04-17 08:48:01.338 +07:00  DBG]  Began transaction with isolation level 'ReadCommitted'.
+[2026-04-17 08:48:01.342 +07:00  INF]  Messenger Request: KetQuaTrungThauUpdateCommand {"Dto":{"Id":"7ed53c56-61fa-4eec-acc8-708f1b26cd87","GoiThauId":"85629700-f59b-485d-b401-7bfc757ea591","GiaTriTrungThau":5500000,"DonViTrungThauId":null,"SoNgayTrienKhai":12,"SoNgayThucHienHopDong":60,"TrichYeu":"Updated with soNgayThucHienHopDong","LoaiGoiThauId":null,"NgayEHSMT":null,"NgayMoThau":null,"SoQuyetDinh":"QD-NEW-UPDATE","NgayQuyetDinh":null,"DanhSachTepDinhKem":null}}
+[2026-04-17 08:48:01.346 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:48:01.347 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:48:01.348 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:48:01.349 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__ToLower_1='qd-new-update' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND LOWER([k].[SoQuyetDinh]) = @__ToLower_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:48:01.354 +07:00  INF]  Executed DbCommand (5ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__ToLower_1='qd-new-update' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND LOWER([k].[SoQuyetDinh]) = @__ToLower_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:48:01.356 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.357 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:48:01.358 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:48:01.360 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:48:01.361 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (3ms).
+[2026-04-17 08:48:01.363 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__request_Dto_GoiThauId_1='85629700-f59b-485d-b401-7bfc757ea591'], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND [k].[GoiThauId] = @__request_Dto_GoiThauId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:48:01.366 +07:00  INF]  Executed DbCommand (4ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @__request_Dto_GoiThauId_1='85629700-f59b-485d-b401-7bfc757ea591'], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [KetQuaTrungThau] AS [k]
+        WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] <> @__request_Dto_Id_0 AND [k].[GoiThauId] = @__request_Dto_GoiThauId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+[2026-04-17 08:48:01.368 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.369 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:48:01.371 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:48:01.372 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:48:01.373 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (2ms).
+[2026-04-17 08:48:01.374 +07:00  DBG]  Executing DbCommand [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Dto_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:48:01.377 +07:00  INF]  Executed DbCommand (3ms) [Parameters=[@__request_Dto_Id_0='7ed53c56-61fa-4eec-acc8-708f1b26cd87'], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[BuocId], [k].[CreatedAt], [k].[CreatedBy], [k].[DonViTrungThauId], [k].[DuAnId], [k].[GiaTriTrungThau], [k].[GoiThauId], [k].[Index], [k].[IsDeleted], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[NgayQuyetDinh], [k].[SoNgayThucHienHopDong], [k].[SoNgayTrienKhai], [k].[SoQuyetDinh], [k].[TrichYeu], [k].[UpdatedAt], [k].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[Id] = @__request_Dto_Id_0
+ORDER BY [k].[Index] DESC
+[2026-04-17 08:48:01.378 +07:00  DBG]  Context 'AppDbContext' started tracking 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}'.
+[2026-04-17 08:48:01.380 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.381 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 2ms reading results.
+[2026-04-17 08:48:01.382 +07:00  DBG]  The 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}' tracked by 'AppDbContext' changed state from '"Unchanged"' to '"Modified"'.
+[2026-04-17 08:48:01.384 +07:00  DBG]  SaveChanges starting for 'AppDbContext'.
+[2026-04-17 08:48:01.385 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:48:01.386 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:48:01.386 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:48:01.387 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:48:01.388 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:48:01.389 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:48:01.390 +07:00  DBG]  DetectChanges starting for 'AppDbContext'.
+[2026-04-17 08:48:01.391 +07:00  DBG]  DetectChanges completed for 'AppDbContext'.
+[2026-04-17 08:48:01.393 +07:00  DBG]  Creating transaction savepoint.
+[2026-04-17 08:48:01.394 +07:00  DBG]  Created transaction savepoint.
+[2026-04-17 08:48:01.395 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:48:01.395 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:48:01.396 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:48:01.398 +07:00  DBG]  Executing DbCommand [Parameters=[@p19='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @p0=NULL (DbType = Int32), @p1='2026-04-16T19:29:47.1040546+00:00', @p2='admin' (Nullable = false) (Size = 4000), @p3=NULL (DbType = Guid), @p4='fad9b793-80c4-4827-9673-0cddad774bbe', @p5='5500000', @p6='85629700-f59b-485d-b401-7bfc757ea591', @p7='1776367787', @p8='False', @p9=NULL (DbType = Int32), @p10=NULL (DbType = DateTimeOffset), @p11=NULL (DbType = DateTimeOffset), @p12=NULL (DbType = DateTimeOffset), @p13='60' (Nullable = true), @p14='12' (Nullable = true), @p15='QD-NEW-UPDATE' (Size = 4000), @p16='Updated with soNgayThucHienHopDong' (Size = 4000), @p17='2026-04-17T01:48:01.3852680+00:00' (Nullable = true), @p18='0' (Nullable = false) (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [KetQuaTrungThau] SET [BuocId] = @p0, [CreatedAt] = @p1, [CreatedBy] = @p2, [DonViTrungThauId] = @p3, [DuAnId] = @p4, [GiaTriTrungThau] = @p5, [GoiThauId] = @p6, [Index] = @p7, [IsDeleted] = @p8, [LoaiGoiThauId] = @p9, [NgayEHSMT] = @p10, [NgayMoThau] = @p11, [NgayQuyetDinh] = @p12, [SoNgayThucHienHopDong] = @p13, [SoNgayTrienKhai] = @p14, [SoQuyetDinh] = @p15, [TrichYeu] = @p16, [UpdatedAt] = @p17, [UpdatedBy] = @p18
+OUTPUT 1
+WHERE [Id] = @p19;
+[2026-04-17 08:48:01.405 +07:00  INF]  Executed DbCommand (7ms) [Parameters=[@p19='7ed53c56-61fa-4eec-acc8-708f1b26cd87', @p0=NULL (DbType = Int32), @p1='2026-04-16T19:29:47.1040546+00:00', @p2='admin' (Nullable = false) (Size = 4000), @p3=NULL (DbType = Guid), @p4='fad9b793-80c4-4827-9673-0cddad774bbe', @p5='5500000', @p6='85629700-f59b-485d-b401-7bfc757ea591', @p7='1776367787', @p8='False', @p9=NULL (DbType = Int32), @p10=NULL (DbType = DateTimeOffset), @p11=NULL (DbType = DateTimeOffset), @p12=NULL (DbType = DateTimeOffset), @p13='60' (Nullable = true), @p14='12' (Nullable = true), @p15='QD-NEW-UPDATE' (Size = 4000), @p16='Updated with soNgayThucHienHopDong' (Size = 4000), @p17='2026-04-17T01:48:01.3852680+00:00' (Nullable = true), @p18='0' (Nullable = false) (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [KetQuaTrungThau] SET [BuocId] = @p0, [CreatedAt] = @p1, [CreatedBy] = @p2, [DonViTrungThauId] = @p3, [DuAnId] = @p4, [GiaTriTrungThau] = @p5, [GoiThauId] = @p6, [Index] = @p7, [IsDeleted] = @p8, [LoaiGoiThauId] = @p9, [NgayEHSMT] = @p10, [NgayMoThau] = @p11, [NgayQuyetDinh] = @p12, [SoNgayThucHienHopDong] = @p13, [SoNgayTrienKhai] = @p14, [SoQuyetDinh] = @p15, [TrichYeu] = @p16, [UpdatedAt] = @p17, [UpdatedBy] = @p18
+OUTPUT 1
+WHERE [Id] = @p19;
+[2026-04-17 08:48:01.407 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.407 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 0ms reading results.
+[2026-04-17 08:48:01.408 +07:00  DBG]  The 'KetQuaTrungThau' entity with key '{Id: 7ed53c56-61fa-4eec-acc8-708f1b26cd87}' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'.
+[2026-04-17 08:48:01.410 +07:00  DBG]  SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+[2026-04-17 08:48:01.412 +07:00  DBG]  Committing transaction.
+[2026-04-17 08:48:01.413 +07:00  DBG]  Committed transaction.
+[2026-04-17 08:48:01.414 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.415 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (0ms).
+[2026-04-17 08:48:01.416 +07:00  DBG]  Disposing transaction.
+[2026-04-17 08:48:01.417 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:48:01.418 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:48:01.419 +07:00  DBG]  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-04-17 08:48:01.419 +07:00  DBG]  Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-04-17 08:48:01.420 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2026-04-17 08:48:01.421 +07:00  INF]  Executing ObjectResult, writing value of type 'BuildingBlocks.Application.Common.DTOs.ResultApi'.
+[2026-04-17 08:48:01.422 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi) in 121.9633ms
+[2026-04-17 08:48:01.423 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Update (QLDA.WebApi)'
+[2026-04-17 08:48:01.423 +07:00  INF]  HTTP PUT /api/ket-qua-trung-thau/cap-nhat responded 200 in 135.3367 ms
+[2026-04-17 08:48:01.425 +07:00  DBG]  Connection id "0HNKS48NDJG40" completed keep alive response.
+[2026-04-17 08:48:01.426 +07:00  DBG]  'AppDbContext' disposed.
+[2026-04-17 08:48:01.427 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:48:01.428 +07:00  DBG]  Disposed connection to database '' on server '' (0ms).
+[2026-04-17 08:48:01.429 +07:00  INF]  Request finished HTTP/1.1 PUT http://localhost:5082/api/ket-qua-trung-thau/cap-nhat - 200 null application/json; charset=utf-8 147.22ms
+[2026-04-17 08:50:12.036 +07:00  DBG]  Connection id "0HNKS48NDJG40" disconnecting.
+[2026-04-17 08:50:12.039 +07:00  DBG]  Connection id "0HNKS48NDJG40" stopped.
+[2026-04-17 08:50:12.041 +07:00  DBG]  Connection id "0HNKS48NDJG40" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:50:29.845 +07:00  DBG]  Connection id "0HNKS48NDJG41" accepted.
+[2026-04-17 08:50:29.846 +07:00  DBG]  Connection id "0HNKS48NDJG41" received FIN.
+[2026-04-17 08:50:29.847 +07:00  DBG]  Connection id "0HNKS48NDJG42" accepted.
+[2026-04-17 08:50:29.847 +07:00  DBG]  Connection id "0HNKS48NDJG41" started.
+[2026-04-17 08:50:29.855 +07:00  DBG]  Connection id "0HNKS48NDJG42" started.
+[2026-04-17 08:50:29.858 +07:00  DBG]  Connection id "0HNKS48NDJG41" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:50:29.860 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/{id}/chi-tiet - application/json 368
+[2026-04-17 08:50:29.862 +07:00  DBG]  Connection id "0HNKS48NDJG41" disconnecting.
+[2026-04-17 08:50:29.865 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/{id}/chi-tiet'
+[2026-04-17 08:50:29.866 +07:00  DBG]  Connection id "0HNKS48NDJG41" stopped.
+[2026-04-17 08:50:29.867 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/{id}/chi-tiet' is valid for the request path '/api/ket-qua-trung-thau/{id}/chi-tiet'
+[2026-04-17 08:50:29.869 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:29.871 +07:00  DBG]  The request cannot be served from cache because it contains a 'no-cache' cache directive.
+[2026-04-17 08:50:29.872 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:50:29.873 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:29.874 +07:00  INF]  Route matched with {action = "Get", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Get(System.Guid) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:50:29.876 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:50:29.878 +07:00  DBG]  Execution plan of resource filters (in the following order): ["None"]
+[2026-04-17 08:50:29.879 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:50:29.881 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:50:29.882 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:50:29.884 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:50:29.886 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:50:29.887 +07:00  DBG]  Attempting to bind parameter 'id' of type 'System.Guid' ...
+[2026-04-17 08:50:29.889 +07:00  DBG]  Attempting to bind parameter 'id' of type 'System.Guid' using the name 'id' in request data ...
+[2026-04-17 08:50:29.892 +07:00  DBG]  Done attempting to bind parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:50:29.893 +07:00  DBG]  Done attempting to bind parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:50:29.894 +07:00  DBG]  Attempting to validate the bound parameter 'id' of type 'System.Guid' ...
+[2026-04-17 08:50:29.896 +07:00  DBG]  Done attempting to validate the bound parameter 'id' of type 'System.Guid'.
+[2026-04-17 08:50:29.897 +07:00  DBG]  The request has model state errors, returning an error response.
+[2026-04-17 08:50:29.898 +07:00  DBG]  Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+[2026-04-17 08:50:29.899 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:50:29.901 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:50:29.902 +07:00  DBG]  Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+[2026-04-17 08:50:29.904 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+[2026-04-17 08:50:29.906 +07:00  INF]  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+[2026-04-17 08:50:29.907 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-17 08:50:29.908 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi) in 23.9605ms
+[2026-04-17 08:50:29.910 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:29.911 +07:00  INF]  HTTP GET /api/ket-qua-trung-thau/{id}/chi-tiet responded 400 in 38.8386 ms
+[2026-04-17 08:50:29.912 +07:00  INF]  The response could not be cached for this request.
+[2026-04-17 08:50:29.913 +07:00  DBG]  Connection id "0HNKS48NDJG42" completed keep alive response.
+[2026-04-17 08:50:29.914 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/{id}/chi-tiet - 400 null application/problem+json; charset=utf-8 53.9325ms
+[2026-04-17 08:50:29.917 +07:00  DBG]  Connection id "0HNKS48NDJG42", Request id "0HNKS48NDJG42:00000001": started reading request body.
+[2026-04-17 08:50:29.919 +07:00  DBG]  Connection id "0HNKS48NDJG42", Request id "0HNKS48NDJG42:00000001": done reading request body.
+[2026-04-17 08:50:37.348 +07:00  INF]  Request starting HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/danh-sach-tien-do - application/json 368
+[2026-04-17 08:50:37.350 +07:00  DBG]  1 candidate(s) found for the request path '/api/ket-qua-trung-thau/danh-sach-tien-do'
+[2026-04-17 08:50:37.351 +07:00  DBG]  Endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)' with route pattern 'api/ket-qua-trung-thau/danh-sach-tien-do' is valid for the request path '/api/ket-qua-trung-thau/danh-sach-tien-do'
+[2026-04-17 08:50:37.352 +07:00  DBG]  Request matched endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:37.353 +07:00  DBG]  The request cannot be served from cache because it contains a 'no-cache' cache directive.
+[2026-04-17 08:50:37.354 +07:00  DBG]  AuthenticationScheme: Bearer was not authenticated.
+[2026-04-17 08:50:37.356 +07:00  INF]  Executing endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:37.357 +07:00  INF]  Route matched with {action = "Get", controller = "KetQuaTrungThau"}. Executing controller action with signature System.Threading.Tasks.Task`1[BuildingBlocks.Application.Common.DTOs.ResultApi] Get(System.Nullable`1[System.Guid], System.Nullable`1[System.Int32], System.Nullable`1[System.Guid], System.String, Int32, Int32) on controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi).
+[2026-04-17 08:50:37.358 +07:00  DBG]  Execution plan of authorization filters (in the following order): ["None"]
+[2026-04-17 08:50:37.359 +07:00  DBG]  Execution plan of resource filters (in the following order): ["None"]
+[2026-04-17 08:50:37.361 +07:00  DBG]  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+[2026-04-17 08:50:37.362 +07:00  DBG]  Execution plan of exception filters (in the following order): ["None"]
+[2026-04-17 08:50:37.363 +07:00  DBG]  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+[2026-04-17 08:50:37.365 +07:00  DBG]  Executing controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:50:37.366 +07:00  DBG]  Executed controller factory for controller QLDA.WebApi.Controllers.KetQuaTrungThauController (QLDA.WebApi)
+[2026-04-17 08:50:37.367 +07:00  DBG]  Attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:50:37.368 +07:00  DBG]  Attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' using the name '' in request data ...
+[2026-04-17 08:50:37.369 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.370 +07:00  DBG]  Done attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.372 +07:00  DBG]  Done attempting to bind parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.373 +07:00  DBG]  Attempting to validate the bound parameter 'duAnId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:50:37.374 +07:00  DBG]  Done attempting to validate the bound parameter 'duAnId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.375 +07:00  DBG]  Attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]' ...
+[2026-04-17 08:50:37.376 +07:00  DBG]  Attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]' using the name '' in request data ...
+[2026-04-17 08:50:37.377 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:50:37.378 +07:00  DBG]  Done attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:50:37.379 +07:00  DBG]  Done attempting to bind parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:50:37.381 +07:00  DBG]  Attempting to validate the bound parameter 'buocId' of type 'System.Nullable`1[System.Int32]' ...
+[2026-04-17 08:50:37.382 +07:00  DBG]  Done attempting to validate the bound parameter 'buocId' of type 'System.Nullable`1[System.Int32]'.
+[2026-04-17 08:50:37.383 +07:00  DBG]  Attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:50:37.385 +07:00  DBG]  Attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' using the name '' in request data ...
+[2026-04-17 08:50:37.387 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.388 +07:00  DBG]  Done attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.389 +07:00  DBG]  Done attempting to bind parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.390 +07:00  DBG]  Attempting to validate the bound parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]' ...
+[2026-04-17 08:50:37.391 +07:00  DBG]  Done attempting to validate the bound parameter 'goiThauId' of type 'System.Nullable`1[System.Guid]'.
+[2026-04-17 08:50:37.392 +07:00  DBG]  Attempting to bind parameter 'globalFilter' of type 'System.String' ...
+[2026-04-17 08:50:37.393 +07:00  DBG]  Attempting to bind parameter 'globalFilter' of type 'System.String' using the name '' in request data ...
+[2026-04-17 08:50:37.394 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:50:37.395 +07:00  DBG]  Done attempting to bind parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:50:37.397 +07:00  DBG]  Done attempting to bind parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:50:37.397 +07:00  DBG]  Attempting to validate the bound parameter 'globalFilter' of type 'System.String' ...
+[2026-04-17 08:50:37.398 +07:00  DBG]  Done attempting to validate the bound parameter 'globalFilter' of type 'System.String'.
+[2026-04-17 08:50:37.399 +07:00  DBG]  Attempting to bind parameter 'pageIndex' of type 'System.Int32' ...
+[2026-04-17 08:50:37.400 +07:00  DBG]  Attempting to bind parameter 'pageIndex' of type 'System.Int32' using the name '' in request data ...
+[2026-04-17 08:50:37.402 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:50:37.403 +07:00  DBG]  Done attempting to bind parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:50:37.403 +07:00  DBG]  Done attempting to bind parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:50:37.405 +07:00  DBG]  Attempting to validate the bound parameter 'pageIndex' of type 'System.Int32' ...
+[2026-04-17 08:50:37.406 +07:00  DBG]  Done attempting to validate the bound parameter 'pageIndex' of type 'System.Int32'.
+[2026-04-17 08:50:37.406 +07:00  DBG]  Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+[2026-04-17 08:50:37.407 +07:00  DBG]  Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+[2026-04-17 08:50:37.408 +07:00  DBG]  Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:50:37.410 +07:00  DBG]  Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:50:37.410 +07:00  DBG]  Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:50:37.411 +07:00  DBG]  Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+[2026-04-17 08:50:37.412 +07:00  DBG]  Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+[2026-04-17 08:50:37.415 +07:00  INF]  Messenger Request: KetQuaTrungThauGetDanhSachQuery {"DuAnId":null,"BuocId":null,"GoiThauId":null,"GlobalFilter":null,"IsNoTracking":true,"PageIndex":0,"PageSize":0}
+[2026-04-17 08:50:37.417 +07:00  DBG]  Entity Framework Core 8.0.15 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.15' with options: SensitiveDataLoggingEnabled CompatibilityLevel=120
+[2026-04-17 08:50:37.420 +07:00  DBG]  Creating DbConnection.
+[2026-04-17 08:50:37.420 +07:00  DBG]  Created DbConnection. (0ms).
+[2026-04-17 08:50:37.421 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.422 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.423 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:50:37.424 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:50:37.425 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:50:37.426 +07:00  DBG]  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+[2026-04-17 08:50:37.431 +07:00  INF]  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+[2026-04-17 08:50:37.433 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.434 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:50:37.435 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.436 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (0ms).
+[2026-04-17 08:50:37.437 +07:00  DBG]  Opening connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.439 +07:00  DBG]  Opened connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.440 +07:00  DBG]  Creating DbCommand for 'ExecuteReader'.
+[2026-04-17 08:50:37.440 +07:00  DBG]  Created DbCommand for 'ExecuteReader' (0ms).
+[2026-04-17 08:50:37.441 +07:00  DBG]  Initialized DbCommand for 'ExecuteReader' (1ms).
+[2026-04-17 08:50:37.442 +07:00  DBG]  Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [k].[Id], [k].[DuAnId], [k].[BuocId], [k].[DonViTrungThauId], [k].[GiaTriTrungThau], [k].[SoNgayTrienKhai], [k].[TrichYeu], [k].[GoiThauId], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[SoQuyetDinh], [k].[NgayQuyetDinh], [g].[Id], [d].[Id], [t0].[Id], [t0].[CreatedAt], [t0].[CreatedBy], [t0].[FileName], [t0].[GroupId], [t0].[GroupType], [t0].[Index], [t0].[IsDeleted], [t0].[OriginalName], [t0].[ParentId], [t0].[Path], [t0].[Size], [t0].[Type], [t0].[UpdatedAt], [t0].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+OUTER APPLY (
+    SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+    FROM [TepDinhKem] AS [t]
+    WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = CONVERT(varchar(36), [k].[Id])
+) AS [t0]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [k].[Index] DESC, [k].[Id], [g].[Id], [d].[Id], [t0].[Index] DESC
+[2026-04-17 08:50:37.450 +07:00  INF]  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [k].[Id], [k].[DuAnId], [k].[BuocId], [k].[DonViTrungThauId], [k].[GiaTriTrungThau], [k].[SoNgayTrienKhai], [k].[TrichYeu], [k].[GoiThauId], [k].[LoaiGoiThauId], [k].[NgayEHSMT], [k].[NgayMoThau], [k].[SoQuyetDinh], [k].[NgayQuyetDinh], [g].[Id], [d].[Id], [t0].[Id], [t0].[CreatedAt], [t0].[CreatedBy], [t0].[FileName], [t0].[GroupId], [t0].[GroupType], [t0].[Index], [t0].[IsDeleted], [t0].[OriginalName], [t0].[ParentId], [t0].[Path], [t0].[Size], [t0].[Type], [t0].[UpdatedAt], [t0].[UpdatedBy]
+FROM [KetQuaTrungThau] AS [k]
+INNER JOIN [GoiThau] AS [g] ON [k].[GoiThauId] = [g].[Id]
+INNER JOIN [DuAn] AS [d] ON [k].[DuAnId] = [d].[Id]
+OUTER APPLY (
+    SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedBy], [t].[FileName], [t].[GroupId], [t].[GroupType], [t].[Index], [t].[IsDeleted], [t].[OriginalName], [t].[ParentId], [t].[Path], [t].[Size], [t].[Type], [t].[UpdatedAt], [t].[UpdatedBy]
+    FROM [TepDinhKem] AS [t]
+    WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[GroupId] = CONVERT(varchar(36), [k].[Id])
+) AS [t0]
+WHERE [k].[IsDeleted] = CAST(0 AS bit) AND [k].[IsDeleted] = CAST(0 AS bit) AND [g].[IsDeleted] = CAST(0 AS bit) AND [d].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [k].[Index] DESC, [k].[Id], [g].[Id], [d].[Id], [t0].[Index] DESC
+[2026-04-17 08:50:37.453 +07:00  DBG]  Closing data reader to 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.453 +07:00  DBG]  A data reader for 'QLDA_Dev' on server 'DESKTOP-CKNT19A' is being disposed after spending 1ms reading results.
+[2026-04-17 08:50:37.455 +07:00  DBG]  Closing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.456 +07:00  DBG]  Closed connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A' (0ms).
+[2026-04-17 08:50:37.457 +07:00  DBG]  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+[2026-04-17 08:50:37.459 +07:00  DBG]  No information found on request to perform content negotiation.
+[2026-04-17 08:50:37.460 +07:00  DBG]  Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+[2026-04-17 08:50:37.460 +07:00  DBG]  Attempting to select the first formatter in the output formatters list which can write the result.
+[2026-04-17 08:50:37.460 +07:00  DBG]  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+[2026-04-17 08:50:37.461 +07:00  INF]  Executing ObjectResult, writing value of type 'BuildingBlocks.Application.Common.DTOs.ResultApi'.
+[2026-04-17 08:50:37.463 +07:00  DBG]  Response is not cacheable because it does not contain the 'public' cache directive.
+[2026-04-17 08:50:37.463 +07:00  INF]  Executed action QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi) in 98.6897ms
+[2026-04-17 08:50:37.464 +07:00  INF]  Executed endpoint 'QLDA.WebApi.Controllers.KetQuaTrungThauController.Get (QLDA.WebApi)'
+[2026-04-17 08:50:37.465 +07:00  INF]  HTTP GET /api/ket-qua-trung-thau/danh-sach-tien-do responded 200 in 110.8658 ms
+[2026-04-17 08:50:37.466 +07:00  INF]  The response could not be cached for this request.
+[2026-04-17 08:50:37.467 +07:00  DBG]  Connection id "0HNKS48NDJG42" completed keep alive response.
+[2026-04-17 08:50:37.468 +07:00  DBG]  'AppDbContext' disposed.
+[2026-04-17 08:50:37.469 +07:00  DBG]  Disposing connection to database 'QLDA_Dev' on server 'DESKTOP-CKNT19A'.
+[2026-04-17 08:50:37.470 +07:00  DBG]  Disposed connection to database '' on server '' (1ms).
+[2026-04-17 08:50:37.472 +07:00  INF]  Request finished HTTP/1.1 GET http://localhost:5082/api/ket-qua-trung-thau/danh-sach-tien-do - 200 null application/json; charset=utf-8 123.9621ms
+[2026-04-17 08:50:37.475 +07:00  DBG]  Connection id "0HNKS48NDJG42", Request id "0HNKS48NDJG42:00000002": started reading request body.
+[2026-04-17 08:50:37.476 +07:00  DBG]  Connection id "0HNKS48NDJG42", Request id "0HNKS48NDJG42:00000002": done reading request body.
+[2026-04-17 08:52:48.621 +07:00  DBG]  Connection id "0HNKS48NDJG42" disconnecting.
+[2026-04-17 08:52:48.627 +07:00  DBG]  Connection id "0HNKS48NDJG42" stopped.
+[2026-04-17 08:52:48.631 +07:00  DBG]  Connection id "0HNKS48NDJG42" sending FIN because: "The Socket transport's send loop completed gracefully."
+[2026-04-17 08:59:34.830 +07:00  DBG]  Config reload token fired. Checking for changes...
